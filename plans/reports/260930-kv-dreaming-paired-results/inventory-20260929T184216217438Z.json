@@ -1,0 +1,247 @@
+{
+  "volume": "kv-dream-runs",
+  "tag": "paired-4b-v1",
+  "retrieved_at_utc": "20260929T184216217438Z",
+  "files": [
+    {
+      "remote_path": "paired-4b-v1/soft-i11-s101/evict-leader/final-state.pt",
+      "size": 75543479,
+      "mtime": 1790707062,
+      "downloaded": false,
+      "not_downloaded_reason": "terminal_tensor_retained_on_volume"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i11-s101/evict-leader/manifest.json",
+      "size": 2490,
+      "mtime": 1790706991,
+      "downloaded": true,
+      "sha256": "809a128a79033abcd44a250a8562bfa5444915328786777fa83e7c4bf5030744",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i11-s101/evict-leader/manifest.json"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i11-s101/evict-leader/steps.jsonl",
+      "size": 5463562,
+      "mtime": 1790707062,
+      "downloaded": true,
+      "sha256": "09264d144c9ec1a068ff9e6893a62dc246c278f015406f2840c2e83d48c76402",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i11-s101/evict-leader/steps.jsonl"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i11-s101/evict-leader/summary.json",
+      "size": 905,
+      "mtime": 1790707062,
+      "downloaded": true,
+      "sha256": "c911c25f77afcb6135632411028dfe5cf5f6d4f827059cbe1946416c1023d450",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i11-s101/evict-leader/summary.json"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i11-s101/evict-leader/text.txt",
+      "size": 1838,
+      "mtime": 1790707062,
+      "downloaded": true,
+      "sha256": "bae92abbcb5193943a8c8f4b7942d80246cf33191b93d717af9f1b5c08440114",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i11-s101/evict-leader/text.txt"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i11-s101/evict-leader/tokens.json",
+      "size": 3975,
+      "mtime": 1790707062,
+      "downloaded": true,
+      "sha256": "c2e3ccceb256d51043db7a6e71d1c46213ab5dc5f2568d4bd39391a575791928",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i11-s101/evict-leader/tokens.json"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i11-s101/evict-leader/uniforms.json",
+      "size": 45620,
+      "mtime": 1790706991,
+      "downloaded": true,
+      "sha256": "9da695dc1ed3ee868078be0282babb9390771eca1f709ff65534ee7531d7539c",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i11-s101/evict-leader/uniforms.json"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i11-s101/group.json",
+      "size": 1526,
+      "mtime": 1790706991,
+      "downloaded": true,
+      "sha256": "14ec738199fb80dad07db7792269692f701885086f2d7dd9a73e5fc687cc6450",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i11-s101/group.json"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i11-s101/merge-leader/final-state.pt",
+      "size": 75543479,
+      "mtime": 1790707257,
+      "downloaded": false,
+      "not_downloaded_reason": "terminal_tensor_retained_on_volume"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i11-s101/merge-leader/manifest.json",
+      "size": 2490,
+      "mtime": 1790707063,
+      "downloaded": true,
+      "sha256": "c2b67d8aeeb22d4e1037a925b7f3c85efef6640c3b1ab586b18d00b0275815ee",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i11-s101/merge-leader/manifest.json"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i11-s101/merge-leader/steps.jsonl",
+      "size": 16267919,
+      "mtime": 1790707257,
+      "downloaded": true,
+      "sha256": "4db5ed501c20e3313d4b8628b1935e01d08799ef3c0c433f620f90af9eff2f16",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i11-s101/merge-leader/steps.jsonl"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i11-s101/merge-leader/summary.json",
+      "size": 898,
+      "mtime": 1790707257,
+      "downloaded": true,
+      "sha256": "a4caa7d0c7b53b2983e696093e5235870e615f7169b855fda90c6a9d6e47c505",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i11-s101/merge-leader/summary.json"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i11-s101/merge-leader/text.txt",
+      "size": 5363,
+      "mtime": 1790707257,
+      "downloaded": true,
+      "sha256": "db86f4d3f448d20d39f173c4c875d8e3fcbd5876fa049f4bcb9ae31bebd127fc",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i11-s101/merge-leader/text.txt"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i11-s101/merge-leader/tokens.json",
+      "size": 9719,
+      "mtime": 1790707257,
+      "downloaded": true,
+      "sha256": "ef0d4d7591e7dfb47e74b4d591cdf2448404f939ba54bcf6c9829a28da0133c9",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i11-s101/merge-leader/tokens.json"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i11-s101/merge-leader/uniforms.json",
+      "size": 45620,
+      "mtime": 1790707063,
+      "downloaded": true,
+      "sha256": "9da695dc1ed3ee868078be0282babb9390771eca1f709ff65534ee7531d7539c",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i11-s101/merge-leader/uniforms.json"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i11-s101/summary.json",
+      "size": 1954,
+      "mtime": 1790707257,
+      "downloaded": true,
+      "sha256": "709724e57f023f70fa93a01e54f4b83993639b15b0bed58db247639b0ea8c844",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i11-s101/summary.json"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i23-s101/evict-leader/final-state.pt",
+      "size": 75543479,
+      "mtime": 1790707129,
+      "downloaded": false,
+      "not_downloaded_reason": "terminal_tensor_retained_on_volume"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i23-s101/evict-leader/manifest.json",
+      "size": 2490,
+      "mtime": 1790707079,
+      "downloaded": true,
+      "sha256": "995cc8a84a6f1205f3f967c6645b48748ddb8d5603cbfbdaebc5a090dc544c63",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i23-s101/evict-leader/manifest.json"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i23-s101/evict-leader/steps.jsonl",
+      "size": 3336075,
+      "mtime": 1790707129,
+      "downloaded": true,
+      "sha256": "8be6cfe1182e6980cfa1673fff316e721d66ab7e4da16af9764189bdcc5ccd48",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i23-s101/evict-leader/steps.jsonl"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i23-s101/evict-leader/summary.json",
+      "size": 911,
+      "mtime": 1790707129,
+      "downloaded": true,
+      "sha256": "03de3eb463fb9e6fb544ec401d45f6358894461df44c90b2fe4e0c586110d6b6",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i23-s101/evict-leader/summary.json"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i23-s101/evict-leader/text.txt",
+      "size": 865,
+      "mtime": 1790707129,
+      "downloaded": true,
+      "sha256": "135fba8addbea8ccca2768c46f53b74ef6e7b3e7ebfb6e8bd2328f7bc380f2f3",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i23-s101/evict-leader/text.txt"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i23-s101/evict-leader/tokens.json",
+      "size": 2294,
+      "mtime": 1790707129,
+      "downloaded": true,
+      "sha256": "d70c7213a6e60de10f986ec0b0d99e80d80753f644c7165b2e39a8cf1914d919",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i23-s101/evict-leader/tokens.json"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i23-s101/evict-leader/uniforms.json",
+      "size": 45620,
+      "mtime": 1790707079,
+      "downloaded": true,
+      "sha256": "9da695dc1ed3ee868078be0282babb9390771eca1f709ff65534ee7531d7539c",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i23-s101/evict-leader/uniforms.json"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i23-s101/group.json",
+      "size": 1526,
+      "mtime": 1790707079,
+      "downloaded": true,
+      "sha256": "7cdb6bb09e9c4fe17c8cc6cb97f482feaca16a698c9b44005c43256a0ef3784f",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i23-s101/group.json"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i23-s101/merge-leader/manifest.json",
+      "size": 2490,
+      "mtime": 1790707129,
+      "downloaded": false,
+      "not_downloaded_reason": "direction_not_terminal_yet"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i23-s101/merge-leader/steps.jsonl",
+      "size": 1347,
+      "mtime": 1790707129,
+      "downloaded": false,
+      "not_downloaded_reason": "direction_not_terminal_yet"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i23-s101/merge-leader/uniforms.json",
+      "size": 45620,
+      "mtime": 1790707129,
+      "downloaded": false,
+      "not_downloaded_reason": "direction_not_terminal_yet"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i47-s101/evict-leader/manifest.json",
+      "size": 2490,
+      "mtime": 1790707280,
+      "downloaded": false,
+      "not_downloaded_reason": "direction_not_terminal_yet"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i47-s101/evict-leader/steps.jsonl",
+      "size": 12093,
+      "mtime": 1790707281,
+      "downloaded": false,
+      "not_downloaded_reason": "direction_not_terminal_yet"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i47-s101/evict-leader/uniforms.json",
+      "size": 45620,
+      "mtime": 1790707280,
+      "downloaded": false,
+      "not_downloaded_reason": "direction_not_terminal_yet"
+    },
+    {
+      "remote_path": "paired-4b-v1/soft-i47-s101/group.json",
+      "size": 1526,
+      "mtime": 1790707280,
+      "downloaded": true,
+      "sha256": "009d80d8be3e1628a884226abca0b15169f8b05fbda9877939c4012dbd987645",
+      "local_path": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/soft-i47-s101/group.json"
+    }
+  ],
+  "note": "Read-only retrieval. Terminal cache tensors retained on volume, not downloaded."
+}

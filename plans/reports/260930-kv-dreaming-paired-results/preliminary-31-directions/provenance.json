@@ -1,0 +1,25 @@
+{
+  "reason": "Final launcher index arrived after the watcher directory listing; 31-direction preliminary snapshot superseded after read-only retrieval of the 32nd completed direction. No trajectory retry.",
+  "files": [
+    {
+      "original": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/consistency.json",
+      "preserved": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/preliminary-31-directions/consistency.json",
+      "sha256": "91b97be74677ff6af4ca3f8665327ec8f95e855b548a5a85eac92085a9ef63f1"
+    },
+    {
+      "original": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/recall.json",
+      "preserved": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/preliminary-31-directions/recall.json",
+      "sha256": "5810c73f2235de62a85db9765005791bfd8ea9fb5e0e5bc2b8093e24e186ca4f"
+    },
+    {
+      "original": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/watcher-status.json",
+      "preserved": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/preliminary-31-directions/watcher-status.json",
+      "sha256": "08985b22d438ff046aac4b2706a518938ad0f3fc62cec723bbd92ce0f0d0ea40"
+    },
+    {
+      "original": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results.md",
+      "preserved": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/preliminary-31-directions/260930-kv-dreaming-paired-results.md",
+      "sha256": "59c2012f94d9b907167a985eb4e8bbebecf1c47476bb428a4488e3732627995c"
+    }
+  ]
+}

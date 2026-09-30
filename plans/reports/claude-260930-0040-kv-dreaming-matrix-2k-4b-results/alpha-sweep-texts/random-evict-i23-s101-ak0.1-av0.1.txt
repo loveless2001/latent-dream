@@ -1,0 +1,102 @@
+#!/usr/bin/env python
+# coding: UTF-8
+"""
+Python 2 版本中，Python并不支持 unicode.py 编码的文件，所以必须把文件改用以下命名方式：
+encoding = 'utf-8'
+而且需要 python -i unicode.py
+总会报： NameError: global name 'unicode' is not defined
+
+python 3正常
+"""
+
+import sys
+def repeat_str(s, n=2):
+    """ returns an n-character string with the string s repeating """
+    return (s * n)[:n]
+def one_close(s,n=1,i=None):
+    if i is None: i=1
+    l = len(s)
+    repeaters = set()
+    for i in range(1, l):
+        for j in (i, l-1):
+            if i <= n:
+                repeaters.update(set(map("".join, zip(s[:n+i],s[i:n+j+1]))))
+            elif i > n:
+                repeaters.update(set(map("".join, zip(s[:j-i+1],s[j-n:j+1]))))
+            else:
+                break
+    return list(repeaters)
+def New_String(s,n=1,i=None):
+    if i is None: i=1
+    late = len(s)
+    T = [s]
+    for _ in range(n):
+        T = (__ATAR_Add_Last(s,late))ale
+def __ATAR_Add_Last(s,late):
+    l = len(s)
+    for n in range(1,l+1):
+        try:
+            s+=one_close(s,n,n)
+        except TypeError:
+            print(__error, '(%s, %s)' % (n,late))
+            raise
+    return s
+def new(i=None):
+    if i is None: i=1
+    for s in "123":
+        T = Repeat_str(s,i)
+"""
+定义Matrix类
+    属性:
+        Pri_Count   : int
+        Col_Count   : int
+        ElementType
+        Matrix      : List(List(list))
+定义是
+Matrix(矩阵)
+到矩阵
+Matrix是一个一个个包含 ElementType的矩阵
+
+基本方法
+init : 对象
+print : 把对象打印成字符串格式
+over : 计算并返回‘结果‘的时候打印
+Populate : 把播放列表中的数据填充到Matrix矩阵
+Start_from_the_Scratch : 从头开始遍历操作列表
+Pop_An_ItemReturn:  从播放列表中 Pop 出一个对象并返回, PossItem = [82,'rd',(12,41,12),{1:'s',1:'s',}];  <=>'Thing_A = (raw,track_mood,(Date,track_length,track_artist,temp),mp3_zip_file_contents);'
+Operates_with_Alptr : 以 a_List/object 作为参数
+Operates_with_Obj : 以 Object 作为参数
+Operates_with_MList : List[object]
+fast_operates : 以 Pure_Matrix 作为操作参数
+Operates_with_Matrix : List_with_lists
+Search_for_only_Povring_objec_Seet_filter : 寻找只含有在 povring_object_set 中的 object 并返回, Plus_Mood_Set = ['raghng',(1231,23,23,32,32)];  <=>'Povring_Object_Seet_Filter' = Thing_A['track_mood']+'(8972,12,4,123,23);'
+"""
+class Basic_Mario_Matrix:
+    def __init__(cdecl_elem_type,pri_count,col_count,int_sum=0,pos_1=0,pos_2=0,element='[]'):
+        cout._type = cdecl_elem_type
+        cout__inc__ = imp__
+        cout[Element_Type]=cdecl_elem_type
+        cout[col_count]=col_count
+        cout[pos_1]=pos_1
+        cout[pos_2]=pos_2
+        cout.element_size = len(cout.element_type)
+        cout[Matrix]=[]
+        cout[Pri_Count]=pri_count
+        for i in xrange(0,col_count):
+            cout[Matrix].Append([cout.Element_Type]__(cout.pos_sum,colcout.Pos_1,colcout.pos_2,element))
+    def __print__(self):
+        _i = 0
+        _final = ''
+        while _i < cout[Matrix].Length:
+            if yo == 'return':
+                return ''+[_i]
+            _final += cout[Matrix][_i]+','
+            _i += 1
+        return '['+_final+']'
+    def over__(self,element=None):
+        if not element:
+            element = 0.01
+        cout = self // element
+__Fast_get_sum__(cout.net,0,cout.pri_count,cout.col_count,cout.element_type)
+    def Search_for_only_Povring_objec_Seet_filter
+__Fast_get_sum__(cout.net,0,cout.pri_count,cout.col_count,cout.element_type)<|endoftext|>

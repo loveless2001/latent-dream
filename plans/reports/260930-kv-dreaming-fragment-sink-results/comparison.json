@@ -1,0 +1,1756 @@
+{
+  "schema": 1,
+  "baseline": {
+    "fragment_sink": "none",
+    "expected_directions": 16,
+    "present_directions": 16,
+    "complete": true,
+    "missing_conditions": [],
+    "errors": [],
+    "counts": {
+      "P1_no_reduction": 8,
+      "P2_loop_flag": 5,
+      "P3_pre_reduction_trigram_hit": 2
+    },
+    "stop_reasons": {
+      "eos": 16
+    },
+    "runs": [
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/fragment-i11-s101-b0/evict-leader",
+        "seed": 11,
+        "beta": 0.0,
+        "policy": "evict",
+        "stop_reason": "eos",
+        "generated_tokens": 100,
+        "post_reduction_steps": 35,
+        "P1_no_reduction": false,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 65,
+          "last_included_step": 64,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "2f30d08a5dcbe24b5bc7e342fdbc6de7064c3981268a8d1360deedc088c0b9ad",
+          "summary.json": "99ccc73671be2a5edcfb1f92f9f7762ea0d66869261730b099a47e42edd33dff",
+          "tokens.json": "dcc77dd8e1a38d0789766b1c59f2e8642918b91c52e60612c2bd15f1f9ea9db6",
+          "steps.jsonl": "af3e7882592b01d2f95d1c6bd0dcc4b91e1df6afef9214d40fefaa6315108956"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/fragment-i11-s101-b0/merge-leader",
+        "seed": 11,
+        "beta": 0.0,
+        "policy": "merge",
+        "stop_reason": "eos",
+        "generated_tokens": 1863,
+        "post_reduction_steps": 1798,
+        "P1_no_reduction": false,
+        "P2_loop_flag": true,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 65,
+          "last_included_step": 64,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "7db6d45329df16b120f0da2e11d736c52250174499bafccdd2b29ec83a1c7256",
+          "summary.json": "0d982770e4c0aad2d63ef450061d46a2d09a555ec838d9533a70e142131d5364",
+          "tokens.json": "f3e2c9b8d98b4c6aa4fddfae5b166e82786a5b108c335976ba334adf3d8070fd",
+          "steps.jsonl": "33fcdb90397b70d8300be6954b351375bedcff43953af0156c689e126f23981b"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/fragment-i11-s101-b0.25/evict-leader",
+        "seed": 11,
+        "beta": 0.25,
+        "policy": "evict",
+        "stop_reason": "eos",
+        "generated_tokens": 10,
+        "post_reduction_steps": 0,
+        "P1_no_reduction": true,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 10,
+          "last_included_step": 9,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "e6fe365982e02e551d2003f373fac7b51ef3d1fe57d6add8e36596a260c9a1c4",
+          "summary.json": "c34b82c928c0c7aec9ca15cdbd6c91fd953e0a3b0d2085eeacfc8ff1ec149829",
+          "tokens.json": "44b83d2a2a53cc3e14eb0548a82adc85d3db71a4ed28cea3842449f396d1c579",
+          "steps.jsonl": "e0f43ca4745218a9cc9b25085c510f2844009005876e93c3431869ad791172c2"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/fragment-i11-s101-b0.25/merge-leader",
+        "seed": 11,
+        "beta": 0.25,
+        "policy": "merge",
+        "stop_reason": "eos",
+        "generated_tokens": 10,
+        "post_reduction_steps": 0,
+        "P1_no_reduction": true,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 10,
+          "last_included_step": 9,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "03ff8f7d21aed1046111fa9e64ffe2268d0b90972badeea9279cd7f4e7845d57",
+          "summary.json": "48ec7b5ef5a73210e209b984d46421cc684bb68de9d69e540c7e6df2cbe90491",
+          "tokens.json": "44b83d2a2a53cc3e14eb0548a82adc85d3db71a4ed28cea3842449f396d1c579",
+          "steps.jsonl": "880cc8da2d5664720ed53e0e2dc74256a486a2d0fc0950215256151ae8aae787"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/fragment-i23-s101-b0/evict-leader",
+        "seed": 23,
+        "beta": 0.0,
+        "policy": "evict",
+        "stop_reason": "eos",
+        "generated_tokens": 1,
+        "post_reduction_steps": 0,
+        "P1_no_reduction": true,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 1,
+          "last_included_step": 0,
+          "trigram_opportunity": false,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "a479f39f8849966bcd103c2e1cbaecf67c65bd60c0063b661e9ba678ac4d4c3b",
+          "summary.json": "fc92cf5cc64d9e203e07d36879834d818a6f917638ecf9c1ed098d375a477fa0",
+          "tokens.json": "e02fd90f44bc1cd5479848e130e77ec2105028ce5a31db092f7fe88fe1348281",
+          "steps.jsonl": "6888d63cfc7be28d3b49b22529512fae4176465b8763643e69159ec8faa0f435"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/fragment-i23-s101-b0/merge-leader",
+        "seed": 23,
+        "beta": 0.0,
+        "policy": "merge",
+        "stop_reason": "eos",
+        "generated_tokens": 1,
+        "post_reduction_steps": 0,
+        "P1_no_reduction": true,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 1,
+          "last_included_step": 0,
+          "trigram_opportunity": false,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "5100eb5d7c2e5a94406ec816636e883ff58ec02211dc34c148c50d17caedc00e",
+          "summary.json": "e28401f83933c9a15aeccee349faec281bcdebf6a0517a49f3526e36f4105b8d",
+          "tokens.json": "e02fd90f44bc1cd5479848e130e77ec2105028ce5a31db092f7fe88fe1348281",
+          "steps.jsonl": "0c0024eb714ec65d4b91df0eff4ef3243241cc4cfc0252f14e87956d66a4efb8"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/fragment-i23-s101-b0.25/evict-leader",
+        "seed": 23,
+        "beta": 0.25,
+        "policy": "evict",
+        "stop_reason": "eos",
+        "generated_tokens": 19,
+        "post_reduction_steps": 0,
+        "P1_no_reduction": true,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": true,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 19,
+          "last_included_step": 18,
+          "trigram_opportunity": true,
+          "direction_any_hit": true,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [
+                [
+                  26,
+                  1614,
+                  16275
+                ],
+                [
+                  646,
+                  2058,
+                  1745
+                ],
+                [
+                  1614,
+                  16275,
+                  646
+                ],
+                [
+                  13940,
+                  11295,
+                  31291
+                ],
+                [
+                  16275,
+                  646,
+                  2058
+                ]
+              ],
+              "any_hit": true
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "da0967d9b1a519100b57ed6d366bad87218229e77c0bd9d90f3be986714ff38d",
+          "summary.json": "e22d8037b6b9c4326784442d1994a691ed64431fe6d1d336f4b9399c8175e4cd",
+          "tokens.json": "851a781dfc2688c8f925115fc096efe2e98cb5e8c0e94a86cfe144a460bed17e",
+          "steps.jsonl": "4d6ea00cc941c2bcc50a1fda8f4e93a5514a500b16d2aedaa06843eaa2965073"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/fragment-i23-s101-b0.25/merge-leader",
+        "seed": 23,
+        "beta": 0.25,
+        "policy": "merge",
+        "stop_reason": "eos",
+        "generated_tokens": 19,
+        "post_reduction_steps": 0,
+        "P1_no_reduction": true,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": true,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 19,
+          "last_included_step": 18,
+          "trigram_opportunity": true,
+          "direction_any_hit": true,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [
+                [
+                  26,
+                  1614,
+                  16275
+                ],
+                [
+                  646,
+                  2058,
+                  1745
+                ],
+                [
+                  1614,
+                  16275,
+                  646
+                ],
+                [
+                  13940,
+                  11295,
+                  31291
+                ],
+                [
+                  16275,
+                  646,
+                  2058
+                ]
+              ],
+              "any_hit": true
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "43aa2d5de788c5d034d9d2661146ab5d5190f81f36a8e66c8d9e73acea1f3390",
+          "summary.json": "eff741b4eeb11652e9ef3f380870d795acc0a98b1dd792ad9201d6007cd278c1",
+          "tokens.json": "851a781dfc2688c8f925115fc096efe2e98cb5e8c0e94a86cfe144a460bed17e",
+          "steps.jsonl": "058d4f34695f79f48f9a396a4cb1c455d8559db2d76eacbd1f8f9809596f88f9"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/fragment-i47-s101-b0/evict-leader",
+        "seed": 47,
+        "beta": 0.0,
+        "policy": "evict",
+        "stop_reason": "eos",
+        "generated_tokens": 580,
+        "post_reduction_steps": 515,
+        "P1_no_reduction": false,
+        "P2_loop_flag": true,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 65,
+          "last_included_step": 64,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "8eab9968d3881695948be4de4d62d8b8de22b6b8c859b0a8c74968f319c8063c",
+          "summary.json": "e5f1d73740d267e1b501f242d579a794a15076f83e4a31f371f3afbaeec7236a",
+          "tokens.json": "ca389a920962ec9c98c9a0d1428f8353ed755b6f50beb6ec6a4050ac6c30a7c2",
+          "steps.jsonl": "c2656f1b4d264aa97922c748f96c89ef1c2acec2f15de1308041206b2051d2f6"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/fragment-i47-s101-b0/merge-leader",
+        "seed": 47,
+        "beta": 0.0,
+        "policy": "merge",
+        "stop_reason": "eos",
+        "generated_tokens": 190,
+        "post_reduction_steps": 125,
+        "P1_no_reduction": false,
+        "P2_loop_flag": true,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 65,
+          "last_included_step": 64,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "0ce9bfae841eb2441439289427e17d54e4047016a5bc2f186ab4f53ee51c1653",
+          "summary.json": "9bd3fc596a6a6ddff5a3e294792033f9c880ac76a3f5381e39cb5acb19f74edb",
+          "tokens.json": "bef7f9cd80e20c4f2e3f63ae3a6be082ba89f2d7af8ce6a1585cb9dccc7b8d77",
+          "steps.jsonl": "52ac58487209153c78e477dadb279414779cc96e322d2fcd3f427849b60dc51a"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/fragment-i47-s101-b0.25/evict-leader",
+        "seed": 47,
+        "beta": 0.25,
+        "policy": "evict",
+        "stop_reason": "eos",
+        "generated_tokens": 93,
+        "post_reduction_steps": 28,
+        "P1_no_reduction": false,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 65,
+          "last_included_step": 64,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "d188522aab5db34ca6427d72ec7709a52c38f60d8e9c3d9981ea79e2eb46c1d6",
+          "summary.json": "fe1d6beba607ad6f0188173780a0d93aa0149404a04f279cb1a7f6bac2ba56b6",
+          "tokens.json": "2001b4233ed3799a8cd1cd63c7fecbe941904ad7af4dfa9efcd35399bb29fcb6",
+          "steps.jsonl": "3978f977ca94876c24ad0c8bfeb9e6a396a400a557ba39fb972e8a49185ae992"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/fragment-i47-s101-b0.25/merge-leader",
+        "seed": 47,
+        "beta": 0.25,
+        "policy": "merge",
+        "stop_reason": "eos",
+        "generated_tokens": 143,
+        "post_reduction_steps": 78,
+        "P1_no_reduction": false,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 65,
+          "last_included_step": 64,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "c28de5eae640a38f81cbf6f372fcfba9d9d4fbdb62aca2ad1fa1ae91d87cfad6",
+          "summary.json": "2842145e5ecaba36f8b8bfcc80c402b25ed2094c5c2d7463d26b90b50cc42b54",
+          "tokens.json": "bb2b20333e9d7a9e7ed968a23a511a9a078e4ded4fc4a1b7783f40aded3bae92",
+          "steps.jsonl": "9369d77b30da5e48f5d178a79993680b15af27cd37aded91b354150fac651e38"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/fragment-i89-s101-b0/evict-leader",
+        "seed": 89,
+        "beta": 0.0,
+        "policy": "evict",
+        "stop_reason": "eos",
+        "generated_tokens": 10,
+        "post_reduction_steps": 0,
+        "P1_no_reduction": true,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 10,
+          "last_included_step": 9,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "ba5615a507c3374c7e889182c9a85d780a9ca8736c6b59c096bff3121114e0a7",
+          "summary.json": "f67718a8d6e6271f9818a95a47ff0cbcc27b93a61aa70f6c274f25f06d2fde0e",
+          "tokens.json": "e1bb1fd0c3187126f3adfe1cded1b8201b94c62fd80f936b6362e3f5234f3835",
+          "steps.jsonl": "93fd6966568c1ccd223f675cbfa179b1c04da3cdc00f21bac7300884cbdd0099"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/fragment-i89-s101-b0/merge-leader",
+        "seed": 89,
+        "beta": 0.0,
+        "policy": "merge",
+        "stop_reason": "eos",
+        "generated_tokens": 10,
+        "post_reduction_steps": 0,
+        "P1_no_reduction": true,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 10,
+          "last_included_step": 9,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "ff73bc8d1ddb29a6f5422bca4f5757b64596f539da1f1ea36d471146d1846be1",
+          "summary.json": "fd52d77aac8476e3bff471940d2f902ca0c3c2af2cb3c5b766587d184f869232",
+          "tokens.json": "e1bb1fd0c3187126f3adfe1cded1b8201b94c62fd80f936b6362e3f5234f3835",
+          "steps.jsonl": "feda9a3900b994b03c2d1e77dd3d534c44594c5c93a264a92b4f85c955533b8d"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/fragment-i89-s101-b0.25/evict-leader",
+        "seed": 89,
+        "beta": 0.25,
+        "policy": "evict",
+        "stop_reason": "eos",
+        "generated_tokens": 165,
+        "post_reduction_steps": 100,
+        "P1_no_reduction": false,
+        "P2_loop_flag": true,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 65,
+          "last_included_step": 64,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "2d4c52bd4464a88c082cea73bac46fb780799f21e5a59958175960e910e24b90",
+          "summary.json": "6dd1497ae3d28ac0de1b7c699561a551ca1c8d6dabb39ec16b7b441a5cfe4067",
+          "tokens.json": "4207c1e8109c896af05b2c493a8b9422dfae577050b2da9c5a24afc47bd2ba7a",
+          "steps.jsonl": "75fcc6e5cf0cdda783871b819a1e37d6128d0b889a4f3dfb92177d0021b22547"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw/fragment-i89-s101-b0.25/merge-leader",
+        "seed": 89,
+        "beta": 0.25,
+        "policy": "merge",
+        "stop_reason": "eos",
+        "generated_tokens": 191,
+        "post_reduction_steps": 126,
+        "P1_no_reduction": false,
+        "P2_loop_flag": true,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 65,
+          "last_included_step": 64,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "ca62ca82e22c2c3606290694ab7482650e690767102eaf7202216e8ad4ca91c7",
+          "summary.json": "7cd9e66291aa9ad80926f6af30c663b9819486532301ed7118c7e30dbe2a22df",
+          "tokens.json": "7394d8f2d719b8178d0d2c3585245f33aa3626590614325a5ba78dac66c0aea1",
+          "steps.jsonl": "a24c9f7b54187d1e2323f3016f4e2666d24be7f6b54fc85728489a2f73b47c25"
+        }
+      }
+    ]
+  },
+  "baseline_plan_sha256": "f144096f88c87a605ca2b13f1457fc5df65c219950382ac4260f95191256af95",
+  "comparison_script_sha256": "21c64264fb88f617cc14bfe2e121f443bb81dec27275aa0496f9116385e0321f",
+  "sink": {
+    "fragment_sink": "bos",
+    "expected_directions": 16,
+    "present_directions": 16,
+    "complete": true,
+    "missing_conditions": [],
+    "errors": [],
+    "counts": {
+      "P1_no_reduction": 0,
+      "P2_loop_flag": 2,
+      "P3_pre_reduction_trigram_hit": 2
+    },
+    "stop_reasons": {
+      "eos": 12,
+      "token_limit": 4
+    },
+    "runs": [
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-fragment-sink-results/raw/fragment-i11-s101-b0/evict-leader",
+        "seed": 11,
+        "beta": 0.0,
+        "policy": "evict",
+        "stop_reason": "eos",
+        "generated_tokens": 408,
+        "post_reduction_steps": 344,
+        "P1_no_reduction": false,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 64,
+          "last_included_step": 63,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "dd8ac18e62594a2250f309e847bb6685425eadb7a45b0a2f7d93bf1c92a53f05",
+          "summary.json": "57d651d92edd3b17b7759dbe8c2421f4835299a4750f645fada947f49290f705",
+          "tokens.json": "bc6681f9c0e1c90d3932952c1ce72c51d43b639a717b6a1e6184b4cfd9a548da",
+          "steps.jsonl": "3680a02970db52ba108cddd3a257f6b2d1bf5bd1d9d0731a19094d73fea4b1d0"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-fragment-sink-results/raw/fragment-i11-s101-b0/merge-leader",
+        "seed": 11,
+        "beta": 0.0,
+        "policy": "merge",
+        "stop_reason": "eos",
+        "generated_tokens": 1549,
+        "post_reduction_steps": 1485,
+        "P1_no_reduction": false,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 64,
+          "last_included_step": 63,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "75cb7c2536076d13f3f05dbfe04ae175edbc2b0501f7ff8c971bc643ed7d2ff9",
+          "summary.json": "d3d054b9fc64b03ca27b32acba57c59c0864090ea2bc46424cef38266cdf2521",
+          "tokens.json": "87109546c50c001b9c63be6345ba0c3f467cac1dff64ed0d8ca39f095a313cbf",
+          "steps.jsonl": "0df9024ece28f61df6b676e2047c49c8b91a5f37ecebbb6b320363384eb64554"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-fragment-sink-results/raw/fragment-i11-s101-b0.25/evict-leader",
+        "seed": 11,
+        "beta": 0.25,
+        "policy": "evict",
+        "stop_reason": "token_limit",
+        "generated_tokens": 2048,
+        "post_reduction_steps": 1984,
+        "P1_no_reduction": false,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 64,
+          "last_included_step": 63,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "1b224a4b5f81628c702c57182db33a8e2f267163c8cae54dc69f60022fccc07d",
+          "summary.json": "88e6f9153d0f6fbadee4a95bb1197ed8938ce2556d845ac5f6dae40615bf97ad",
+          "tokens.json": "ab3c5d24623abbe1121496cf6627a02d9e122e63a9db72bed5d8d95648cdad7e",
+          "steps.jsonl": "a56168c60998b9477ca537254d4ae9c7c3501ab9858978a8c9a9ba1596d405ab"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-fragment-sink-results/raw/fragment-i11-s101-b0.25/merge-leader",
+        "seed": 11,
+        "beta": 0.25,
+        "policy": "merge",
+        "stop_reason": "token_limit",
+        "generated_tokens": 2048,
+        "post_reduction_steps": 1984,
+        "P1_no_reduction": false,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 64,
+          "last_included_step": 63,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "dc0be9a64d9833324e421326993318cf36bf57fb156c32774f2af75ded448086",
+          "summary.json": "7c7869b03df046e3f112915cde31892b47dcd3dee3425ece00747e9d134c2545",
+          "tokens.json": "5f249320ea691c09c64e71730a84616a6ff2c7f584539bf2789b6aa4610a3507",
+          "steps.jsonl": "e0451fb54a0c3c36dfb1bf2858b9015e5de415a44209af17dcc0b688401f5044"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-fragment-sink-results/raw/fragment-i23-s101-b0/evict-leader",
+        "seed": 23,
+        "beta": 0.0,
+        "policy": "evict",
+        "stop_reason": "eos",
+        "generated_tokens": 1159,
+        "post_reduction_steps": 1095,
+        "P1_no_reduction": false,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 64,
+          "last_included_step": 63,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "7bc0cc1b320d174efc1c2104d02aec56e750ed032f6b8f1738951d7d7a63f39e",
+          "summary.json": "74a37e3de4de149512e4209df10233a5f2e2cec36510af87df3e54535b408134",
+          "tokens.json": "f386b85236abdd1b62a7438605be2b574ada331269f0cb4210ca5afa6d53a8d4",
+          "steps.jsonl": "6fd171c8517694627dcadfbf9e4ab1b8b201260107f09a133fde5668c01a2bd9"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-fragment-sink-results/raw/fragment-i23-s101-b0/merge-leader",
+        "seed": 23,
+        "beta": 0.0,
+        "policy": "merge",
+        "stop_reason": "eos",
+        "generated_tokens": 220,
+        "post_reduction_steps": 156,
+        "P1_no_reduction": false,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 64,
+          "last_included_step": 63,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "0590a4f45cf5c584712234ad64be8e1e6492a9c00dd9c913aaf5f455b7e7face",
+          "summary.json": "8c4b1cd875a43f3f3d29534c7bc7c56f27eb9b8ec7834c7883983d038a2ae247",
+          "tokens.json": "353d9e2af2a96f18fce2ba4023ffb12f82f92c6e926d2b8a9e264296cedcc2a9",
+          "steps.jsonl": "65459272a2809fe3079ad59ea7ad6f7a7588d5d91d0945baf00b5966c6684ab2"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-fragment-sink-results/raw/fragment-i23-s101-b0.25/evict-leader",
+        "seed": 23,
+        "beta": 0.25,
+        "policy": "evict",
+        "stop_reason": "token_limit",
+        "generated_tokens": 2048,
+        "post_reduction_steps": 1984,
+        "P1_no_reduction": false,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 64,
+          "last_included_step": 63,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "852a37d8fa4169e50306f1b8a84e3182504d6ecf4881024263ebeb67218740d9",
+          "summary.json": "a78c96e7c4978eaa94e628365809d78b45d46432158866080fe82cbbd164854e",
+          "tokens.json": "f80718485a1423bbddefea74aeccd87020618218cd2343c9546c192ed671dda0",
+          "steps.jsonl": "34b439367bcc4736fdb6ff87d4ed7d656d7ff836a85dc993ac66700c6dce891d"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-fragment-sink-results/raw/fragment-i23-s101-b0.25/merge-leader",
+        "seed": 23,
+        "beta": 0.25,
+        "policy": "merge",
+        "stop_reason": "eos",
+        "generated_tokens": 853,
+        "post_reduction_steps": 789,
+        "P1_no_reduction": false,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 64,
+          "last_included_step": 63,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "0b686efa5b58d427cd2d41c8c807d03fc9a477f5df3e02733e83187286ee81b8",
+          "summary.json": "70de46c7590c0098925548f9424911f90c57a4bd9e99c96659c17ea4a8ad6336",
+          "tokens.json": "4d408318281ff2f8080955b482871b2c2e64e8da7f588baea0ea88c19e3c22f6",
+          "steps.jsonl": "12833a0b9d2cecd089c71dfa217b07f861c81865f1e71b687d3f3f959ee8b3de"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-fragment-sink-results/raw/fragment-i47-s101-b0/evict-leader",
+        "seed": 47,
+        "beta": 0.0,
+        "policy": "evict",
+        "stop_reason": "eos",
+        "generated_tokens": 190,
+        "post_reduction_steps": 126,
+        "P1_no_reduction": false,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 64,
+          "last_included_step": 63,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "4e31f3f7905e812168551a3d141abdea6e9556925f31f6e4cf650b7283c0ac0d",
+          "summary.json": "5ba8042e3a56bdd7fc26e94edd1a5370983af0a98ffd47c4399a95bf98e63c7a",
+          "tokens.json": "da28495f1c7019bc8d093a41c649461c6266debb6f4a38f8afcec7aa9d89ac2d",
+          "steps.jsonl": "308a4c4d87bcc7d480f01b97e992c5582169dad506898c771ce3016785c4d5f4"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-fragment-sink-results/raw/fragment-i47-s101-b0/merge-leader",
+        "seed": 47,
+        "beta": 0.0,
+        "policy": "merge",
+        "stop_reason": "eos",
+        "generated_tokens": 935,
+        "post_reduction_steps": 871,
+        "P1_no_reduction": false,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 64,
+          "last_included_step": 63,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "ebd94a54877eebfe5eac26d8a506a3fb371daedc7154a2e846c8da46f6cfd2ac",
+          "summary.json": "4227851b050d95f7d8505d1b410241fcbf1260a7bfd1b513f4276806584a14c3",
+          "tokens.json": "cdcca96e42baf54cb274bcbcefe0b84f7bd7267a40ff1a4cff4a19ac002f9b97",
+          "steps.jsonl": "a0fcf8b8e6d35eda9cbeb993c06cbeaf8ede93d96d9b551752363498df32f0bc"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-fragment-sink-results/raw/fragment-i47-s101-b0.25/evict-leader",
+        "seed": 47,
+        "beta": 0.25,
+        "policy": "evict",
+        "stop_reason": "eos",
+        "generated_tokens": 1389,
+        "post_reduction_steps": 1325,
+        "P1_no_reduction": false,
+        "P2_loop_flag": true,
+        "P3_pre_reduction_trigram_hit": true,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 64,
+          "last_included_step": 63,
+          "trigram_opportunity": true,
+          "direction_any_hit": true,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [
+                [
+                  15,
+                  11,
+                  16
+                ],
+                [
+                  508,
+                  15,
+                  11
+                ]
+              ],
+              "any_hit": true
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "f0e98699bb82ea3d00facba4022c1b7f6d85a6b7450ff29c14d0b131eeef9995",
+          "summary.json": "fc0a3d70c84a55e73e230dc155d0853fa28e44ac26a6a1d6e527ad670f80f3db",
+          "tokens.json": "a65c2092e162ddc2ce98947eb0b3c6a6df201b9e8728dad127f03d32ded1976c",
+          "steps.jsonl": "8932a275023d0ecdb0fae3c43e3908ca063bfab42d7950e35ff1168c60c64165"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-fragment-sink-results/raw/fragment-i47-s101-b0.25/merge-leader",
+        "seed": 47,
+        "beta": 0.25,
+        "policy": "merge",
+        "stop_reason": "eos",
+        "generated_tokens": 348,
+        "post_reduction_steps": 284,
+        "P1_no_reduction": false,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": true,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 64,
+          "last_included_step": 63,
+          "trigram_opportunity": true,
+          "direction_any_hit": true,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [
+                [
+                  15,
+                  11,
+                  16
+                ],
+                [
+                  508,
+                  15,
+                  11
+                ]
+              ],
+              "any_hit": true
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "fc7c5ef7e880094464228cd2ccd0621b64deb4d700d7cc64c1224df6f0613256",
+          "summary.json": "f65aa470e4537fe904d320f9b4064da8e0df9749370fabe34f5c20aed83b0c8a",
+          "tokens.json": "2aac65a9e668768646ae3a4cb2ad987b060e3fb9e7b864bfd5c056b13f045f17",
+          "steps.jsonl": "7000e14aca77255a244c740cb6657fce270b281b463ffa1e5da1158c65916e21"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-fragment-sink-results/raw/fragment-i89-s101-b0/evict-leader",
+        "seed": 89,
+        "beta": 0.0,
+        "policy": "evict",
+        "stop_reason": "token_limit",
+        "generated_tokens": 2048,
+        "post_reduction_steps": 1984,
+        "P1_no_reduction": false,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 64,
+          "last_included_step": 63,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "e386d7909ea3601df0eab0e51454c2eee83f06323ac4fb6dc0e5a6334ce1becf",
+          "summary.json": "50281f9f04160ae3741b5c9710ee06f4ef65aecfa9758458890c79857d07dffc",
+          "tokens.json": "971bd91bd476d53d68313bec8bc4318e3e091ec7788b17cd8a9a56ddb1d33bd1",
+          "steps.jsonl": "df0df39e343e62df9db03c2274566ac2d570b2eacaadd79ae3fbc0aba86bd29e"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-fragment-sink-results/raw/fragment-i89-s101-b0/merge-leader",
+        "seed": 89,
+        "beta": 0.0,
+        "policy": "merge",
+        "stop_reason": "eos",
+        "generated_tokens": 1845,
+        "post_reduction_steps": 1781,
+        "P1_no_reduction": false,
+        "P2_loop_flag": true,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 64,
+          "last_included_step": 63,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "85205d3704e99d9e52dcde1d3b3179b68be492f03944b954adde5a372d7642ff",
+          "summary.json": "f95503742762ea734e41c19a1e96dfd471cc582ef9f14a8f8ebf14aaed87b4ac",
+          "tokens.json": "86f27fd10d49a50f7b8a3797e58fd99d4c62f2377d69eba25175e0dad80312a2",
+          "steps.jsonl": "95f8b4362edd27d0557cd2130535d325eafddb9cd034303c661285bd7a82be08"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-fragment-sink-results/raw/fragment-i89-s101-b0.25/evict-leader",
+        "seed": 89,
+        "beta": 0.25,
+        "policy": "evict",
+        "stop_reason": "eos",
+        "generated_tokens": 889,
+        "post_reduction_steps": 825,
+        "P1_no_reduction": false,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 64,
+          "last_included_step": 63,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "b6461fc18173914651b9cf2776d688be610820fabb2743d05b838de6a22350cc",
+          "summary.json": "b0dbf994af73b49bd054667e2da5c151e04299a44e85c7ec414fb8e317a0c419",
+          "tokens.json": "63e13e512d8f9087d034aad22261894f98786626041df57b9fdbd9940e725dcd",
+          "steps.jsonl": "69cb62044488e2b6ff1cfee1fadcce7bc5b4a7b112ec765765cbb8431d0f6e26"
+        }
+      },
+      {
+        "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-fragment-sink-results/raw/fragment-i89-s101-b0.25/merge-leader",
+        "seed": 89,
+        "beta": 0.25,
+        "policy": "merge",
+        "stop_reason": "eos",
+        "generated_tokens": 131,
+        "post_reduction_steps": 67,
+        "P1_no_reduction": false,
+        "P2_loop_flag": false,
+        "P3_pre_reduction_trigram_hit": false,
+        "P3_details": {
+          "window": "through first-reduction step inclusive; whole output if no reduction",
+          "window_tokens": 64,
+          "last_included_step": 63,
+          "trigram_opportunity": true,
+          "direction_any_hit": false,
+          "fragments": [
+            {
+              "fragment_id": 0,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 1,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 2,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            },
+            {
+              "fragment_id": 3,
+              "eligible_trigrams": 14,
+              "hit_trigrams": [],
+              "any_hit": false
+            }
+          ]
+        },
+        "artifact_sha256": {
+          "manifest.json": "f2b04be9e455a7e62b6f5015c799d3216e028da3cb93fd2d50e9c0dd91cdc068",
+          "summary.json": "a498d5e45d557bf0259dff507a0f99db309d7e8d62268bcebcd541f64061cbd4",
+          "tokens.json": "e4878e16c79b937b0cea7a0b229bbf801662650d7771bd0d1f068da92523eeac",
+          "steps.jsonl": "de67b4b3cb14be65fd46da3a546032ffadf7bef3543b0d5494e9de31224e7968"
+        }
+      }
+    ]
+  },
+  "primary_verdict": "STOP_FRAGMENT_STARTS",
+  "note": "Counts use 16 directions from 8 initial caches; paired leader directions are not independent replicates. A negative intervention stops fragment starts, not all sink hypotheses.",
+  "sink_plan_sha256": "7c3d4e9b3ef519bb95a243ab74d7f1520b720f5101c7f7da04d481ae838968c3",
+  "predictions": {
+    "P1": true,
+    "P2": true,
+    "P3": false
+  }
+}

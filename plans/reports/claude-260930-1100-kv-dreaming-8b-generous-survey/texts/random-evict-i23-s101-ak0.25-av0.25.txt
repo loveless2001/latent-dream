@@ -1,0 +1,43 @@
+INDEX Bold italics Reference bolding Reference enclosing
+
+12 Feb 2009
+
+Hash functions
+
+We learned about hash functions here but I didn't cover them much at the time. Feel free to jump around to "Hash functions" in the archive if that sounds like fun. I talked about the terms "pre-image resistance", "second pre-image resistance", and "collision resistance" there. To explain what those mean, there are a few mathematical notations we need to use here.
+
+We're going to introduce our bolding reference before we come back to this.
+
+I'll also formally define the notions that I casually used when I talked about reverse and salted hashes. We're going to formalise ways to attack a hash function. We're going to assume a standard hash function. The first, two, and n pre-image resistance are partial qualities. There is no two-pre-image resistance, n-pre-image resistance, or damned-immutable, at least not for a given hash function.
+
+One pre-image resistance
+
+Given any value v, there exists a value x for which h(x) = v. One pre-image resistance is a hash function with the property that given v, it is hard to find x for which h(x) = v. There is no such thing as a "two pre-image resistance"; to say that is a bit misusing the term.
+
+Note that the number of possible x is at chance 1/hdv, with hdv being the internal size (hash depth). It may be more, it may be less, it's probably not. See below. Any value x which fulfils h(x) = v is said to be a pre-image of v. A hash is always a sum of length-words. If we've got our length words h-words long, and our value v is v-words long, it will take valence 1/2h the efforts to find a collision and valence 1/(hdv) the efforts to find a pre-image.
+
+That's the full-size pre-image resistance. If I choose unused,complete hash values v in the full range, harder will be all. Beats me why databases that use hashing usually replace real values by hash values, and why real values are not directly accessible anymore. But all I know about databases is that they use them. You can find two sums which are equal through simple brute force:
+
+It would be harsher to brute force the lower decimal and hexadecimal sums, so you would want to keep those in mind too. Their h-1 bits long sum values are produced by padding with zeroes. (On the other hand, they produce less hexadecimal and decimal sum values, as the white padding gets no numeric value.) A decent hash function produces unique full-size sums at chance 1/h-1. You could find the hash value of v easily enough by choosing a decimal string long enough to hold hash values v-words long, and filling it with zeroes. This is best achieved when you choose the domain v to be as big as the range of h(x) as possible.
+
+Two pre-image resistance
+
+Given two different values x1 and x2 for which h(x1) = h(x2) = v, there exists a third value x3, different from x1 and x2, for which h(x3) = v. Two pre-image resistance is a hash function with the property that given x1 and x2 for which h(x1) = h(x2) = v, it is not easy to find x3 different from x1 and x2 for which h(x3) = v. At chance 1/h dv it will take exactly the search efforts to find a collision. And vxuv may be much less than that.
+
+Three pre-image resistance
+
+Given two different values x1 and x2 for which h(x1) = h(x3) = v, there exists a third value x4, different from x1 and x2, for which h(x4) = h(x1) = h(x2) = v. Three pre-image resistance is a hash function with the property that given x1 and x2 for which h(x1) = h(x2) = v, it is not easy to find x4 different from x1 and x2 for which h(x4) = v. The smallest difference between hm vs hn increases by a factor of 1/2h with every additional sum value in the sequence. Thus, a hash function is harder to attack through the full pre-image resistance than through the partial n-pre-image resistances. A deterministic hash function is always hard to attack as deep as v-words worth of hash. It's just that attackists consider only their own v-words of hash and forget the longest possible n-words of hash when facing a hash function.
+
+Damned-immutability
+
+Given the n pre-words of hash sum words in the sequence for a deterministic hash function, it is hard to get the next n pre-words out of that. There is no "n + 1 pre-image resistance": a hash function which truly did is always loose of any pre-image resistance.
+
+We started with one pre-image resistance and built n pre-image resistance. Theoretically we can go up to catchable limits of infinity. It is when a genetic coefficient approaches infinity that an n pre-image resistance is not possible from an n + 1 pre-image resistance unless the latter goes to catchable limits of infinity. That's partly because a super-huge genetic coefficient makes any pre-image out of an honest hash sequence.
+
+In computer science, software developers address n pre-image resistance a bit differently. They say that a given hash function behaves like one pre-image resistance. When a dictionary is filled with all the values that a hash function can return, usually only a small fraction is filled. Then it's easy to fill it completely. Even the most low-quality hash functions produce and honest hash sequence easier than could be expected in reality. That's one good reason to choose a realm of hashes the same size as the internal hash values. The waste area is between dn and un. dn is the home area: you cannot fill its dn spaces more than dn different ways. un is the all area: you cannot fill its un spaces less than un different ways. There are 2 l(h) possible hexagrams contained in a given L0 word. 2 l(h) can hold a pocket greater than dn. The proper way to hash m numbers is to hash each number together, all at once, including the number of numbers, then take the hash mod dn. That gives each space less than dn an equal chance each of occupying dn, dn + 1, dn + 2 un spaces. It could disrupt the genetic coefficient later on.
+
+Complete collision resistance
+
+Given d, different values in the sequence for a deterministic hash function, there are (dn) um possible sums. If dn is divisible by 1 + 1/21 + 1/2 it is possible to define h, such that the product of d = 1, 2, 3, and n differ from 0 by a factor 2l(h), to 0 again when n = dn=h(1 + 1/21 + 1/2). This is a truly complete collidable sequence. Whatever complete H(x) you define, it will be possible to dig it through h(x) = h(H(x)) with a smaller h(x) any time before the h and genetic coefficients meet catchable limits of infinity. Having an h(x) an h(n xd) hexagram apart from H(n xd h) is not enough to guarantee h(x) = h(H(x)). One way to deal with that is to keep taking larger and larger sums of the sums until their sum has a given hexadecimal and decimal remainder modulo dn. The size lim(i), of sum i, is written x1 = L1, x2 = L0L1 x5 = L0L1L2 L4 = L0L1 x6 = LN, x7 = L0L1L2 L5, x8 = L0L1 xNd = L0L1. The sample size L, is taken at constant steps of one, as if L(x) = n xd. n and d are constants.
+
+It's worth noting that lg n < um for x < dn and lg dn > un for x > dn. That's why it's possible to get down to perfect collision resistance. As soon as x = um, N = hd, recursively when occurring. That's why the complete collision resistance is a perfect multi-resolution map for all square waves. That's why the complete collision resistance is a good texture for mathematical games<|endoftext|>

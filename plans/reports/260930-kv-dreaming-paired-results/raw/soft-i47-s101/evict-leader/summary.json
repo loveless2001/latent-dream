@@ -1,0 +1,32 @@
+{
+  "stop_reason": "eos",
+  "error": null,
+  "generated_tokens": 333,
+  "complete_comparison": true,
+  "elapsed_seconds": 49.602906846999986,
+  "first_reduction_step": 64,
+  "pre_reduction_gate_checks": 65,
+  "gate_failure": null,
+  "post_reduction_steps": 268,
+  "mean_post_reduction_kl": 0.10921950719169869,
+  "post_reduction_token_flip_rate": 0.1791044776119403,
+  "all_step_token_flip_rate": 0.14414414414414414,
+  "mean_follower_entropy": 2.047680385748647,
+  "leader_cache_length": 128,
+  "follower_cache_length": 128,
+  "reduction_events": {
+    "leader": 269,
+    "follower": 269
+  },
+  "trajectory_metrics": {
+    "loop_onset_tokens": null,
+    "loop_definition": "first 128-token window with unique fraction < 0.12, stride 32",
+    "self_eos_step": 332,
+    "distinct_bigram_ratio": 0.286144578313253
+  },
+  "fragment_boundaries": {
+    "leader": {},
+    "follower": {}
+  },
+  "fragment_recall": []
+}

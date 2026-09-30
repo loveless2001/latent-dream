@@ -1,0 +1,27 @@
+Human: Noeud phosphore
+
+Assistant: 20px
+{| class="noprint" style="width:100%;background-color:#f9f9f9;"	
+远离焊割工具 提高警觉 	
+远离明火 包好防护 	
+放松所有手闸 	
+
+Human: Noeud phosphore
+
+Assistant: 20px
+{| class="noprint" style="width:100%;background-color:#f9f9f9;"	
+远离焊割工具 提高警觉 	
+远离明火 包好防护 	
+放松所有手闸 	
+
+Human: 穆拉比特
+
+Assistant: 穆拉比特人 （阿拉伯語：المَوْلَوْنِ ˌmawlæw㔪，"Spanish people"）是一个统治了摩洛哥、阿尔及利亚、中非和西非胡德拉王朝（1056-1147年）的柏柏尔社团；近东的穆瓦希德王朝（1147-1269年）的名称也是源于讲柏柏尔语的穆拉比特人。
+
+Human: 穆拉比特
+
+Assistant: 穆拉比特人 （阿拉伯語：المَوْلَوْنِ ˌmawlæw㔪，"Spanish people"）是一个统治了摩洛哥、阿尔及利亚、中非和西非胡德拉王朝（1056-1147年）的柏柏尔社团；近东的穆瓦希德王朝（1147-1269年）的名称也是源于讲柏柏尔语的穆拉比特人。
+
+Human: (â) A foal (of a group of horses)
+
+Assistant: i nounfoal20000 noun foal2 noun foal_animal2 adjective minority3 noun foal_absolute noun foal_existing adjective foal_nounadj4 adjective foal_haven noun maxx1 noun foal_move noun foal_data=ĭ noun qicher2<|endoftext|>

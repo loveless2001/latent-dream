@@ -1,0 +1,11 @@
+MOARN is a tool with support for templates exported to TXML format. MOARN is optimized for performance and has been validated on more than
+
+Transient Compressed Media Analysis System (TCMAS) is designed to identify audiovisual stream files that have been obfuscated using Windows' Low Level Volume Manager (DiskClusBlk) utility for disk/partition encryption.
+
+Transceiver Incapacity Detector. Transceiver Incapacity Detector (TID) is a graphical and log viewer for IEEE 802.11 WLAN traffic captured with AirPcap under Linux.
+
+Transcript (MITM Finger Protocol) Transcript Tool is intended to assist in resolving RADIUS/Winbind authentication issues for systems using MITM Finger Protocol. Validation
+
+Times is a quick and simple time classification and manipulation tool for time text. (contact: us) .
+
+Time Clock is a clock to publish the current time across multiple galleries, in all major image formats.<|endoftext|>

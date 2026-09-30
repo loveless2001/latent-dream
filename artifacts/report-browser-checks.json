@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-01",
+  "htmlSha256": "f46c82da9bbcf0515f63f4cf14ef1ca08e4f364fb7d8420e9754748f217a2e0f",
+  "title": "can language models dream?",
+  "pageErrors": [],
+  "externalRequests": [],
+  "modelSwitches": "both locations synchronize recipe, samples, charts, source links, and aria-pressed states",
+  "uneditedSamples": "both match source text exactly",
+  "rawHtmlSafety": "model HTML rendered as literal text",
+  "thaiFont": "embedded and loaded",
+  "responsiveWidths": [
+    1440,
+    768,
+    390,
+    320
+  ],
+  "print": "A4 PDF rendered",
+  "reducedMotion": "passed",
+  "javascriptDisabled": "4B configuration, complete original output, and report links remain available"
+}

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="3" skipped="0" tests="6" time="0.162" timestamp="2026-09-30T01:56:43.747250+07:00" hostname="LAPTOP-JLT9RUVS"><testcase classname="tests.test_paired_collector" name="test_collector_waits_for_terminal_summary_and_refuses_mutated_terminal_file" time="0.020" /><testcase classname="tests.test_paired_watcher" name="test_capacity_fallback_guards[16-0-2000-01-01T00:00:00+00:00-True-True]" time="0.010"><failure message="assert (1 == 1 and not True)">tmp_path = PosixPath('/tmp/pytest-of-lenovo/pytest-8/test_capacity_fallback_guards_0')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x780620653440&gt;
+backlog = 16, running = 0, deadline = '2000-01-01T00:00:00+00:00'
+stopped = True, should_launch = True
+
+    @pytest.mark.parametrize("backlog,running,deadline,stopped,should_launch", [
+        (16, 0, "2000-01-01T00:00:00+00:00", True, True),
+        (16, 0, "2100-01-01T00:00:00+00:00", True, False),
+        (15, 1, "2000-01-01T00:00:00+00:00", True, False),
+        (16, 0, "2000-01-01T00:00:00+00:00", False, False),
+    ])
+    def test_capacity_fallback_guards(tmp_path, monkeypatch, backlog, running, deadline, stopped, should_launch):
+        script = Path(__file__).resolve().parents[1] / "scripts/watch_paired_artifacts.py"
+        spec = importlib.util.spec_from_file_location("watch_paired_for_test", script)
+        watch = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(watch)
+        calls, launches = [], []
+        monkeypatch.setattr(watch.sys, "argv", [str(script), "--output", str(tmp_path), "--app-id", "ap-test",
+                                                "--allow-a100-fallback-after", deadline])
+    
+        def fake_run(argv, **kwargs):
+            calls.append(argv)
+            code, data = 0, {}
+            if "collect_paired_artifacts.py" in argv[1]:
+                code, data = 75, {"status": "no_committed_outputs_yet"}
+            elif "paired_queue_status.py" in argv[1]:
+                data = {"backlog": backlog, "total_tasks": running, "running_inputs": running}
+            elif argv[:3] == ["modal", "app", "list"]:
+                data = [{"App ID": "ap-test", "State": "stopped" if stopped else "ephemeral (detached)"}]
+            elif argv[:3] != ["modal", "app", "stop"]:
+                raise AssertionError(f"unexpected command: {argv}")
+            return SimpleNamespace(returncode=code, stdout=json.dumps(data), stderr="")
+    
+        def fake_launch(argv, **kwargs):
+            launches.append((argv, kwargs))
+            return SimpleNamespace(pid=123)
+    
+        def end_poll(seconds):
+            raise EndFirstPoll()
+    
+        monkeypatch.setattr(watch.subprocess, "run", fake_run)
+        monkeypatch.setattr(watch.subprocess, "Popen", fake_launch)
+        monkeypatch.setattr(watch.time, "sleep", end_poll)
+        try:
+            result = watch.main()
+&gt;           assert result == 1 and not stopped
+E           assert (1 == 1 and not True)
+
+tests/test_paired_watcher.py:54: AssertionError</failure></testcase><testcase classname="tests.test_paired_watcher" name="test_capacity_fallback_guards[16-0-2100-01-01T00:00:00+00:00-True-False]" time="0.006"><failure message="assert (1 == 1 and not True)">tmp_path = PosixPath('/tmp/pytest-of-lenovo/pytest-8/test_capacity_fallback_guards_1')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x780620653860&gt;
+backlog = 16, running = 0, deadline = '2100-01-01T00:00:00+00:00'
+stopped = True, should_launch = False
+
+    @pytest.mark.parametrize("backlog,running,deadline,stopped,should_launch", [
+        (16, 0, "2000-01-01T00:00:00+00:00", True, True),
+        (16, 0, "2100-01-01T00:00:00+00:00", True, False),
+        (15, 1, "2000-01-01T00:00:00+00:00", True, False),
+        (16, 0, "2000-01-01T00:00:00+00:00", False, False),
+    ])
+    def test_capacity_fallback_guards(tmp_path, monkeypatch, backlog, running, deadline, stopped, should_launch):
+        script = Path(__file__).resolve().parents[1] / "scripts/watch_paired_artifacts.py"
+        spec = importlib.util.spec_from_file_location("watch_paired_for_test", script)
+        watch = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(watch)
+        calls, launches = [], []
+        monkeypatch.setattr(watch.sys, "argv", [str(script), "--output", str(tmp_path), "--app-id", "ap-test",
+                                                "--allow-a100-fallback-after", deadline])
+    
+        def fake_run(argv, **kwargs):
+            calls.append(argv)
+            code, data = 0, {}
+            if "collect_paired_artifacts.py" in argv[1]:
+                code, data = 75, {"status": "no_committed_outputs_yet"}
+            elif "paired_queue_status.py" in argv[1]:
+                data = {"backlog": backlog, "total_tasks": running, "running_inputs": running}
+            elif argv[:3] == ["modal", "app", "list"]:
+                data = [{"App ID": "ap-test", "State": "stopped" if stopped else "ephemeral (detached)"}]
+            elif argv[:3] != ["modal", "app", "stop"]:
+                raise AssertionError(f"unexpected command: {argv}")
+            return SimpleNamespace(returncode=code, stdout=json.dumps(data), stderr="")
+    
+        def fake_launch(argv, **kwargs):
+            launches.append((argv, kwargs))
+            return SimpleNamespace(pid=123)
+    
+        def end_poll(seconds):
+            raise EndFirstPoll()
+    
+        monkeypatch.setattr(watch.subprocess, "run", fake_run)
+        monkeypatch.setattr(watch.subprocess, "Popen", fake_launch)
+        monkeypatch.setattr(watch.time, "sleep", end_poll)
+        try:
+            result = watch.main()
+&gt;           assert result == 1 and not stopped
+E           assert (1 == 1 and not True)
+
+tests/test_paired_watcher.py:54: AssertionError</failure></testcase><testcase classname="tests.test_paired_watcher" name="test_capacity_fallback_guards[15-1-2000-01-01T00:00:00+00:00-True-False]" time="0.006"><failure message="assert (1 == 1 and not True)">tmp_path = PosixPath('/tmp/pytest-of-lenovo/pytest-8/test_capacity_fallback_guards_2')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x780620680f50&gt;
+backlog = 15, running = 1, deadline = '2000-01-01T00:00:00+00:00'
+stopped = True, should_launch = False
+
+    @pytest.mark.parametrize("backlog,running,deadline,stopped,should_launch", [
+        (16, 0, "2000-01-01T00:00:00+00:00", True, True),
+        (16, 0, "2100-01-01T00:00:00+00:00", True, False),
+        (15, 1, "2000-01-01T00:00:00+00:00", True, False),
+        (16, 0, "2000-01-01T00:00:00+00:00", False, False),
+    ])
+    def test_capacity_fallback_guards(tmp_path, monkeypatch, backlog, running, deadline, stopped, should_launch):
+        script = Path(__file__).resolve().parents[1] / "scripts/watch_paired_artifacts.py"
+        spec = importlib.util.spec_from_file_location("watch_paired_for_test", script)
+        watch = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(watch)
+        calls, launches = [], []
+        monkeypatch.setattr(watch.sys, "argv", [str(script), "--output", str(tmp_path), "--app-id", "ap-test",
+                                                "--allow-a100-fallback-after", deadline])
+    
+        def fake_run(argv, **kwargs):
+            calls.append(argv)
+            code, data = 0, {}
+            if "collect_paired_artifacts.py" in argv[1]:
+                code, data = 75, {"status": "no_committed_outputs_yet"}
+            elif "paired_queue_status.py" in argv[1]:
+                data = {"backlog": backlog, "total_tasks": running, "running_inputs": running}
+            elif argv[:3] == ["modal", "app", "list"]:
+                data = [{"App ID": "ap-test", "State": "stopped" if stopped else "ephemeral (detached)"}]
+            elif argv[:3] != ["modal", "app", "stop"]:
+                raise AssertionError(f"unexpected command: {argv}")
+            return SimpleNamespace(returncode=code, stdout=json.dumps(data), stderr="")
+    
+        def fake_launch(argv, **kwargs):
+            launches.append((argv, kwargs))
+            return SimpleNamespace(pid=123)
+    
+        def end_poll(seconds):
+            raise EndFirstPoll()
+    
+        monkeypatch.setattr(watch.subprocess, "run", fake_run)
+        monkeypatch.setattr(watch.subprocess, "Popen", fake_launch)
+        monkeypatch.setattr(watch.time, "sleep", end_poll)
+        try:
+            result = watch.main()
+&gt;           assert result == 1 and not stopped
+E           assert (1 == 1 and not True)
+
+tests/test_paired_watcher.py:54: AssertionError</failure></testcase><testcase classname="tests.test_paired_watcher" name="test_capacity_fallback_guards[16-0-2000-01-01T00:00:00+00:00-False-False]" time="0.005" /><testcase classname="tests.test_paired_watcher" name="test_completed_index_refreshes_listing_before_analysis" time="0.013" /></testsuite></testsuites>

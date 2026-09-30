@@ -1,0 +1,11 @@
+Human: The following is a multiple-choice question about history from China. Please select the correct answer.
+The largest industry in Songjiang Weaving Bureau during the Ming Dynasty was ____
+A. Sericulture Industry
+B. Silk Reeling Industry
+C. Textile Industry
+D. Cotton Textile Industry
+Answer:
+Score: 2 points Your answer: 
+Answer:
+
+Assistant: D<|endoftext|>

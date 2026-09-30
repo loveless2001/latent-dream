@@ -1,0 +1,37 @@
+Which of the following ingots would be fine fractions, and how should I evaluate the size fraction for each ingot? Additionally, which background/substrate was used to plot the Cu peak in the XRD analysis? Using the Bragg formula, calculate the d-spacing for a crystal with an interatomic spacing of 0.28 nm for Cu and Co using X-rays with a wavelength (X-ray constant) of 1.54 nm. Finally, for a detector at an angle \(2\theta = 85^\circ\), determine if there will be a position on the detector for the reflections corresponding to Cu (K\(\alpha\)1 = 1.54 nm) and Fe.
+
+To determine if an ingot is a fine fraction, you need to evaluate the size of the particles in the sample. For fine fractions, the particles should be fine enough that X-rays and ICP (Inductively Coupled Plasma) can detect them. This means the particles must be small enough to scatter X-rays and interact with ICP, typically less than 1 micron in diameter.
+
+The background/substrate used to plot the Cu peak in the XRD analysis is most likely Invalloy 750. This material is commonly used as a backing or substrate in XRD analysis because it provides a stable and uniform background, allowing for better detection of the Cu peak.
+
+To calculate the d-spacing using the Bragg equation, we first need to find the \(\sin^2\theta\) value. The Bragg equation is given by \(n\lambda = 2d\sin\theta\), where \(\lambda\) is the wavelength of the X-rays (1.54 nm), \(n\) is an integer (usually 1 for the first-order reflection), and \(\theta\) is the angle of incidence. Given the interatomic spacing \(a = 0.28\) nm, we can solve for \(\theta\) and then \(\sin^2\theta\):
+
+\[
+\sin\theta = \frac{\lambda}{2d} = \frac{1.54}{2 \times 0.28} \approx 2.75 \text{ nm}
+\]
+
+\[
+\theta = \sin^{-1}(2.75) \approx 156.87^\circ
+\]
+
+Since \(\sin^2\theta = \sin^2(156.87^\circ) \approx 0.0006\), we can now calculate the d-spacing for the crystal:
+
+\[
+d = \frac{n\lambda}{2\sin\theta} = \frac{1.54}{2 \times 2.75} \approx 0.28 \text{ nm}
+\]
+
+For a detector at an angle \(2\theta = 85^\circ\), we need to check if the reflections corresponding to Cu (K\(\alpha\)1 = 1.54 nm) and Fe will appear on the detector. Using the Bragg equation again:
+
+\[
+\theta = \frac{85^\circ}{2} = 42.5^\circ
+\]
+
+\[
+\sin\theta = \sin(42.5^\circ) \approx 0.677
+\]
+
+\[
+d = \frac{n\lambda}{2\sin\theta} = \frac{1.54}{2 \times 0.677} \approx 1.12 \text{ nm}
+\]
+
+From the diffraction pattern, we can see that for \(2\theta = 85^\circ\), the important reflections are for Fe (d = 2.068 nm, JCPDS 49-0178) and Cu (d = 1.389 nm, JCPDS 47-1041). Therefore, both Fe and Cu reflections will appear on the detector at \(2\theta = 85^\circ\).<|endoftext|>

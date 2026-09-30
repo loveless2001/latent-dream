@@ -1,0 +1,16 @@
+{
+  "tag": "paired-4b-sink-v1",
+  "app_id": "ap-6bVJrnHRjozpVWTn38brDt",
+  "gpu": "L40S",
+  "gpu_evidence": "launcher selection reported by Claude in #lab 20643; not independent telemetry",
+  "authorization": "#lab 20637",
+  "execution_owner": "Claude",
+  "collection_and_offline_analysis_owner": "Codex",
+  "launcher_groups": 8,
+  "successful_launcher_groups": 8,
+  "local_files_hash_verified": 112,
+  "terminal_tensors_retained_remote": 16,
+  "latest_inventory": "inventory-20260930T025813413937Z.json",
+  "freeze_verified": true,
+  "read_only_refresh_after_completed_index": true
+}

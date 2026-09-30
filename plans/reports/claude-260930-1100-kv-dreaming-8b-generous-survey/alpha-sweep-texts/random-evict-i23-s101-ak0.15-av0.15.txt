@@ -1,0 +1,39 @@
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$₹KA
+
+]
+
+defsign
+
+fullepaginationofarticle
+
+
+text = request.text.replace("&", "%26").replace("+", "%2B").replace("%E2%80%8A", "%20")
+  
+   # ФорматнеимяАРХива
+namearchive = request.namearchive.replace(".", " ").replace("_", " ").replace(" ", "-")
+   
+
+# urlстраницы
+pagewindow = int(request.pagewindow)
+   
+# Заголовоксайта
+titlewebsite = request.headschidubrede.replace(";", " ").split()[0].split()[0].split()[0]
+
+# Запросы
+arrayofrequests = []
+for x in request:
+  
+   if x[0] == "ctl":
+    arrayofrequests.append(urlsplit(request[0]).path)
+          
+patterns={
+           
+   "identifier": "abuse-ad-report",
+   "content": ["абуза - Отчёт", "абуза - Отчет"],
+   "pattern": "%E2%80%8Aabuse-ad-report"
+ }
+
+if titlewebsite and titlewebsite in patterns["content"]:
+    print("OK")
+else:
+    print("Error")<|endoftext|>

@@ -1,0 +1,607 @@
+{
+  "schema": 1,
+  "run_count": 2,
+  "fragment_comparisons": [
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+      "fragment_id": 0,
+      "boundary": "first_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+      "fragment_id": 0,
+      "boundary": "all_unprotected_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+      "fragment_id": 0,
+      "boundary": "all_original_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+      "fragment_id": 1,
+      "boundary": "first_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+      "fragment_id": 1,
+      "boundary": "all_unprotected_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+      "fragment_id": 1,
+      "boundary": "all_original_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+      "fragment_id": 2,
+      "boundary": "first_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+      "fragment_id": 2,
+      "boundary": "all_unprotected_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+      "fragment_id": 2,
+      "boundary": "all_original_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+      "fragment_id": 3,
+      "boundary": "first_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+      "fragment_id": 3,
+      "boundary": "all_unprotected_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+      "fragment_id": 3,
+      "boundary": "all_original_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+      "fragment_id": 0,
+      "boundary": "first_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+      "fragment_id": 0,
+      "boundary": "all_unprotected_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+      "fragment_id": 0,
+      "boundary": "all_original_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+      "fragment_id": 1,
+      "boundary": "first_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+      "fragment_id": 1,
+      "boundary": "all_unprotected_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+      "fragment_id": 1,
+      "boundary": "all_original_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+      "fragment_id": 2,
+      "boundary": "first_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+      "fragment_id": 2,
+      "boundary": "all_unprotected_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+      "fragment_id": 2,
+      "boundary": "all_original_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+      "fragment_id": 3,
+      "boundary": "first_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+      "fragment_id": 3,
+      "boundary": "all_unprotected_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    },
+    {
+      "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/merge-leader",
+      "fragment_id": 3,
+      "boundary": "all_original_affected_step",
+      "observed": {
+        "boundary_step": null,
+        "eligible_trigrams": 14,
+        "post_boundary_tokens": 0,
+        "recall": null,
+        "last_recurrence_step": null,
+        "recurrences": [],
+        "unavailable_reason": "boundary_not_reached"
+      },
+      "eligible_comparators": 0,
+      "baseline": [],
+      "excluded_comparators": [
+        {
+          "run": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/audit/raw/fragment-i11-s101-b0.25/evict-leader",
+          "reason": "condition_mismatch"
+        }
+      ],
+      "baseline_mean_recall": null,
+      "recall_minus_baseline": null,
+      "target_complete": true
+    }
+  ],
+  "note": "Descriptive cross-run reference; windows start after the target boundary. Available lengths may differ. No significance or causal-memory claim."
+}

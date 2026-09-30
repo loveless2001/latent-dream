@@ -1,0 +1,153 @@
+{
+  "plan_sha256": "f144096f88c87a605ca2b13f1457fc5df65c219950382ac4260f95191256af95",
+  "planned_directions": 32,
+  "present_directions": 2,
+  "completed_bounded_trajectories": 2,
+  "directions_with_post_reduction_samples": 0,
+  "stop_reasons": {
+    "eos": 2
+  },
+  "gate_failure_directions": 0,
+  "checked_gate_steps": 20,
+  "missing_directions": [
+    "soft-i11-s101/evict-leader",
+    "soft-i11-s101/merge-leader",
+    "soft-i23-s101/evict-leader",
+    "soft-i23-s101/merge-leader",
+    "soft-i47-s101/evict-leader",
+    "soft-i47-s101/merge-leader",
+    "soft-i89-s101/evict-leader",
+    "soft-i89-s101/merge-leader",
+    "random-i11-s101-a0.25/evict-leader",
+    "random-i11-s101-a0.25/merge-leader",
+    "random-i23-s101-a0.25/evict-leader",
+    "random-i23-s101-a0.25/merge-leader",
+    "random-i47-s101-a0.25/evict-leader",
+    "random-i47-s101-a0.25/merge-leader",
+    "random-i89-s101-a0.25/evict-leader",
+    "random-i89-s101-a0.25/merge-leader",
+    "fragment-i11-s101-b0/evict-leader",
+    "fragment-i11-s101-b0/merge-leader",
+    "fragment-i23-s101-b0/evict-leader",
+    "fragment-i23-s101-b0/merge-leader",
+    "fragment-i47-s101-b0/evict-leader",
+    "fragment-i47-s101-b0/merge-leader",
+    "fragment-i89-s101-b0/evict-leader",
+    "fragment-i89-s101-b0/merge-leader",
+    "fragment-i23-s101-b0.25/evict-leader",
+    "fragment-i23-s101-b0.25/merge-leader",
+    "fragment-i47-s101-b0.25/evict-leader",
+    "fragment-i47-s101-b0.25/merge-leader",
+    "fragment-i89-s101-b0.25/evict-leader",
+    "fragment-i89-s101-b0.25/merge-leader"
+  ],
+  "consistency_errors": [],
+  "all_expected_artifacts_consistent": false,
+  "calibration_hashes": [
+    "b2881afcc9a1cb37420262bcce949223c5b2fed69bcf7ada79576dc05f14bb78"
+  ],
+  "identities": [
+    {
+      "attention": "shared_explicit_eager",
+      "device": "cuda",
+      "dtype": "float32",
+      "model": "Qwen/Qwen3-4B-Base",
+      "revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+      "threads": 4
+    }
+  ],
+  "conditions": {
+    "fragment beta=0.25/evict": {
+      "directions": 1,
+      "post_reduction_directions": 0,
+      "generated_tokens": [
+        10
+      ],
+      "stop_reasons": {
+        "eos": 1
+      },
+      "run_mean_kl": null,
+      "run_mean_flip_rate": null,
+      "loop_onset_tokens": [
+        null
+      ]
+    },
+    "fragment beta=0.25/merge": {
+      "directions": 1,
+      "post_reduction_directions": 0,
+      "generated_tokens": [
+        10
+      ],
+      "stop_reasons": {
+        "eos": 1
+      },
+      "run_mean_kl": null,
+      "run_mean_flip_rate": null,
+      "loop_onset_tokens": [
+        null
+      ]
+    }
+  },
+  "cross_direction_checks": [
+    {
+      "group": "fragment-i11-s101-b0.25",
+      "pre_reduction_tokens_compared": 10,
+      "tokens_equal": true,
+      "statistics_equal": true
+    }
+  ],
+  "runs": [
+    {
+      "run": "fragment-i11-s101-b0.25/evict-leader",
+      "condition": "fragment beta=0.25",
+      "policy": "evict",
+      "initialization_seed": 11,
+      "stop_reason": "eos",
+      "complete_comparison": true,
+      "generated_tokens": 10,
+      "post_reduction_steps": 0,
+      "pre_reduction_gate_checks": 10,
+      "first_reduction_step": null,
+      "mean_post_reduction_kl": null,
+      "post_reduction_token_flip_rate": null,
+      "trajectory_metrics": {
+        "loop_onset_tokens": null,
+        "loop_definition": "first 128-token window with unique fraction < 0.12, stride 32",
+        "self_eos_step": 9,
+        "distinct_bigram_ratio": 0.2222222222222222
+      },
+      "reduction_events": {
+        "leader": 0,
+        "follower": 0
+      },
+      "gate_failure": null,
+      "elapsed_seconds": 1.204540884
+    },
+    {
+      "run": "fragment-i11-s101-b0.25/merge-leader",
+      "condition": "fragment beta=0.25",
+      "policy": "merge",
+      "initialization_seed": 11,
+      "stop_reason": "eos",
+      "complete_comparison": true,
+      "generated_tokens": 10,
+      "post_reduction_steps": 0,
+      "pre_reduction_gate_checks": 10,
+      "first_reduction_step": null,
+      "mean_post_reduction_kl": null,
+      "post_reduction_token_flip_rate": null,
+      "trajectory_metrics": {
+        "loop_onset_tokens": null,
+        "loop_definition": "first 128-token window with unique fraction < 0.12, stride 32",
+        "self_eos_step": 9,
+        "distinct_bigram_ratio": 0.2222222222222222
+      },
+      "reduction_events": {
+        "leader": 0,
+        "follower": 0
+      },
+      "gate_failure": null,
+      "elapsed_seconds": 1.2014889060000016
+    }
+  ]
+}

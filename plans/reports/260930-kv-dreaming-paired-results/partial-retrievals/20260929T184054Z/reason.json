@@ -1,0 +1,5 @@
+{
+  "reason": "Preserve the entire initial collection: terminal summaries could arrive after partial logs had already been copied. Recollect terminal directions from scratch.",
+  "from": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/raw",
+  "to": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results/partial-retrievals/20260929T184054Z/raw"
+}

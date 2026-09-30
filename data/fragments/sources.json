@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "selection": "all four sources once, seeded permutation and offsets",
+  "source_token_cap": 512,
+  "fragment_length": 16,
+  "sources": [
+    {
+      "id": "alice",
+      "file": "alice.txt",
+      "title": "Alice in Wonderland",
+      "genre": "fiction",
+      "source": "https://www.gutenberg.org/cache/epub/11/pg11.txt",
+      "extraction": "Byte-for-byte copy of existing recorded Alice fixture",
+      "sha256": "876cf85e4ee35987e57d157bab6584ab093fa0985786aaa212a86492a58049e2",
+      "upstream_sha256": null
+    },
+    {
+      "id": "sampling",
+      "file": "sampling.py",
+      "title": "KV dreaming inverse-CDF sampling implementation",
+      "genre": "python_code",
+      "source": "../../src/kv_dreaming/sampling.py",
+      "extraction": "Frozen copy before paired-runner changes; source hash equals fixture hash",
+      "sha256": "e1498f6d54d1bbd5bcbeb01ae5ea291aa35015525a915eb90dccb00d859a68fa",
+      "upstream_sha256": null
+    },
+    {
+      "id": "darwin",
+      "file": "darwin.txt",
+      "title": "On the Origin of Species, introduction",
+      "genre": "scientific_nonfiction",
+      "source": "https://www.gutenberg.org/cache/epub/1228/pg1228.txt",
+      "extraction": "8000 characters starting at first When on board H.M.S.",
+      "sha256": "1e4934287d0ed0b2a9c32c785f2dc24dc2f19f6b05271207f9a3726853bfea83",
+      "upstream_sha256": "ededa9c0bf8761efed092c303b46c1c92de956838cba6249a33bedfd6d7363b4"
+    },
+    {
+      "id": "declaration",
+      "file": "declaration.txt",
+      "title": "Declaration of Independence (1776), transcription",
+      "genre": "political_document",
+      "source": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "extraction": "HTML text nodes joined with normalized whitespace, from When in the Course through our sacred Honor.; navigation and signatures excluded",
+      "sha256": "25834be8d0ef95ebdb22253c9535e0fd910a1574bda1110406a5498a4e60be00",
+      "upstream_sha256": "42c5731f8373ceaa96ac5a13960a4bab94b1a82874ddd3c9a2b00cf5e03a011f"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "evict": {
+    "stop_reason": "eos",
+    "error": null,
+    "generated_tokens": 1361,
+    "complete_comparison": true,
+    "elapsed_seconds": 228.29593213500004,
+    "first_reduction_step": 64,
+    "pre_reduction_gate_checks": 65,
+    "gate_failure": null,
+    "post_reduction_steps": 1296,
+    "mean_post_reduction_kl": 0.12213919056877236,
+    "post_reduction_token_flip_rate": 0.4498456790123457,
+    "all_step_token_flip_rate": 0.42836149889786923,
+    "mean_follower_entropy": 3.982796009521313,
+    "leader_cache_length": 128,
+    "follower_cache_length": 128,
+    "reduction_events": {
+      "leader": 1297,
+      "follower": 1297
+    },
+    "trajectory_metrics": {
+      "loop_onset_tokens": null,
+      "loop_definition": "first 128-token window with unique fraction < 0.12, stride 32",
+      "self_eos_step": 1360,
+      "distinct_bigram_ratio": 0.7926470588235294
+    },
+    "fragment_boundaries": {
+      "leader": {},
+      "follower": {}
+    },
+    "fragment_recall": []
+  },
+  "merge": {
+    "stop_reason": "eos",
+    "error": null,
+    "generated_tokens": 731,
+    "complete_comparison": true,
+    "elapsed_seconds": 123.06953617700003,
+    "first_reduction_step": 64,
+    "pre_reduction_gate_checks": 65,
+    "gate_failure": null,
+    "post_reduction_steps": 666,
+    "mean_post_reduction_kl": 0.12833645511717043,
+    "post_reduction_token_flip_rate": 0.37237237237237236,
+    "all_step_token_flip_rate": 0.3392612859097127,
+    "mean_follower_entropy": 3.4991553340521846,
+    "leader_cache_length": 128,
+    "follower_cache_length": 128,
+    "reduction_events": {
+      "leader": 667,
+      "follower": 667
+    },
+    "trajectory_metrics": {
+      "loop_onset_tokens": null,
+      "loop_definition": "first 128-token window with unique fraction < 0.12, stride 32",
+      "self_eos_step": 730,
+      "distinct_bigram_ratio": 0.9178082191780822
+    },
+    "fragment_boundaries": {
+      "leader": {},
+      "follower": {}
+    },
+    "fragment_recall": []
+  }
+}

@@ -1,0 +1,570 @@
+{
+  "stop_reason": "eos",
+  "error": null,
+  "generated_tokens": 93,
+  "complete_comparison": true,
+  "elapsed_seconds": 8.657996474,
+  "first_reduction_step": 64,
+  "pre_reduction_gate_checks": 65,
+  "gate_failure": null,
+  "post_reduction_steps": 28,
+  "mean_post_reduction_kl": 0.030685265708089986,
+  "post_reduction_token_flip_rate": 0.17857142857142858,
+  "all_step_token_flip_rate": 0.053763440860215055,
+  "mean_follower_entropy": 1.617864609966355,
+  "leader_cache_length": 128,
+  "follower_cache_length": 128,
+  "reduction_events": {
+    "leader": 29,
+    "follower": 29
+  },
+  "trajectory_metrics": {
+    "loop_onset_tokens": null,
+    "loop_definition": "first 128-token window with unique fraction < 0.12, stride 32",
+    "self_eos_step": 92,
+    "distinct_bigram_ratio": 0.41304347826086957
+  },
+  "fragment_boundaries": {
+    "leader": {
+      "0": {
+        "first_affected_step": 64,
+        "all_unprotected_affected_step": 75,
+        "all_original_affected_step": null,
+        "protected_positions": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "1": {
+        "first_affected_step": 76,
+        "all_unprotected_affected_step": 91,
+        "all_original_affected_step": 91,
+        "protected_positions": []
+      },
+      "2": {
+        "first_affected_step": 92,
+        "all_unprotected_affected_step": null,
+        "all_original_affected_step": null,
+        "protected_positions": []
+      },
+      "3": {
+        "first_affected_step": null,
+        "all_unprotected_affected_step": null,
+        "all_original_affected_step": null,
+        "protected_positions": []
+      }
+    },
+    "follower": {
+      "0": {
+        "first_affected_step": 64,
+        "all_unprotected_affected_step": 69,
+        "all_original_affected_step": null,
+        "protected_positions": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "1": {
+        "first_affected_step": 70,
+        "all_unprotected_affected_step": 77,
+        "all_original_affected_step": 77,
+        "protected_positions": []
+      },
+      "2": {
+        "first_affected_step": 78,
+        "all_unprotected_affected_step": 85,
+        "all_original_affected_step": 85,
+        "protected_positions": []
+      },
+      "3": {
+        "first_affected_step": 86,
+        "all_unprotected_affected_step": null,
+        "all_original_affected_step": null,
+        "protected_positions": []
+      }
+    }
+  },
+  "fragment_recall": [
+    {
+      "fragment_id": 0,
+      "source_id": "declaration",
+      "protected_positions": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "boundaries": {
+        "first_affected_step": {
+          "boundary_step": 64,
+          "eligible_trigrams": 14,
+          "post_boundary_tokens": 28,
+          "recall": 0.0,
+          "last_recurrence_step": null,
+          "recurrences": [
+            {
+              "trigram": [
+                11,
+                1091,
+                311
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                11,
+                1393,
+                85807
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                311,
+                7676,
+                11
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                480,
+                11,
+                1091
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                525,
+                803,
+                25574
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                525,
+                7676,
+                480
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                803,
+                25574,
+                311
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                1091,
+                311,
+                1290
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                1393,
+                85807,
+                525
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                7676,
+                11,
+                1393
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                7676,
+                480,
+                11
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                25574,
+                311,
+                7676
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                42284,
+                525,
+                803
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                85807,
+                525,
+                7676
+              ],
+              "last_step": null
+            }
+          ]
+        },
+        "all_unprotected_affected_step": {
+          "boundary_step": 75,
+          "eligible_trigrams": 14,
+          "post_boundary_tokens": 17,
+          "recall": 0.0,
+          "last_recurrence_step": null,
+          "recurrences": [
+            {
+              "trigram": [
+                11,
+                1091,
+                311
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                11,
+                1393,
+                85807
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                311,
+                7676,
+                11
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                480,
+                11,
+                1091
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                525,
+                803,
+                25574
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                525,
+                7676,
+                480
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                803,
+                25574,
+                311
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                1091,
+                311,
+                1290
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                1393,
+                85807,
+                525
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                7676,
+                11,
+                1393
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                7676,
+                480,
+                11
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                25574,
+                311,
+                7676
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                42284,
+                525,
+                803
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                85807,
+                525,
+                7676
+              ],
+              "last_step": null
+            }
+          ]
+        },
+        "all_original_affected_step": {
+          "boundary_step": null,
+          "eligible_trigrams": 14,
+          "post_boundary_tokens": 0,
+          "recall": null,
+          "last_recurrence_step": null,
+          "recurrences": [],
+          "unavailable_reason": "boundary_not_reached"
+        }
+      }
+    },
+    {
+      "fragment_id": 1,
+      "source_id": "alice",
+      "protected_positions": [],
+      "boundaries": {
+        "first_affected_step": {
+          "boundary_step": 76,
+          "eligible_trigrams": 14,
+          "post_boundary_tokens": 16,
+          "recall": 0.0,
+          "last_recurrence_step": null,
+          "recurrences": [
+            {
+              "trigram": [
+                264,
+                294,
+                49056
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                279,
+                12264,
+                315
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                294,
+                49056,
+                65186
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                315,
+                319,
+                27836
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                315,
+                3709,
+                705
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                319,
+                27836,
+                264
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                387,
+                5802,
+                279
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                1035,
+                387,
+                5802
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                3709,
+                705,
+                323
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                5802,
+                279,
+                12264
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                12264,
+                315,
+                3709
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                27836,
+                264,
+                294
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                49056,
+                65186,
+                1035
+              ],
+              "last_step": null
+            },
+            {
+              "trigram": [
+                65186,
+                1035,
+                387
+              ],
+              "last_step": null
+            }
+          ]
+        },
+        "all_unprotected_affected_step": {
+          "boundary_step": 91,
+          "eligible_trigrams": 14,
+          "post_boundary_tokens": 1,
+          "recall": null,
+          "last_recurrence_step": null,
+          "recurrences": [],
+          "unavailable_reason": "no_post_boundary_trigram_opportunity"
+        },
+        "all_original_affected_step": {
+          "boundary_step": 91,
+          "eligible_trigrams": 14,
+          "post_boundary_tokens": 1,
+          "recall": null,
+          "last_recurrence_step": null,
+          "recurrences": [],
+          "unavailable_reason": "no_post_boundary_trigram_opportunity"
+        }
+      }
+    },
+    {
+      "fragment_id": 2,
+      "source_id": "sampling",
+      "protected_positions": [],
+      "boundaries": {
+        "first_affected_step": {
+          "boundary_step": 92,
+          "eligible_trigrams": 14,
+          "post_boundary_tokens": 0,
+          "recall": null,
+          "last_recurrence_step": null,
+          "recurrences": [],
+          "unavailable_reason": "no_post_boundary_trigram_opportunity"
+        },
+        "all_unprotected_affected_step": {
+          "boundary_step": null,
+          "eligible_trigrams": 14,
+          "post_boundary_tokens": 0,
+          "recall": null,
+          "last_recurrence_step": null,
+          "recurrences": [],
+          "unavailable_reason": "boundary_not_reached"
+        },
+        "all_original_affected_step": {
+          "boundary_step": null,
+          "eligible_trigrams": 14,
+          "post_boundary_tokens": 0,
+          "recall": null,
+          "last_recurrence_step": null,
+          "recurrences": [],
+          "unavailable_reason": "boundary_not_reached"
+        }
+      }
+    },
+    {
+      "fragment_id": 3,
+      "source_id": "darwin",
+      "protected_positions": [],
+      "boundaries": {
+        "first_affected_step": {
+          "boundary_step": null,
+          "eligible_trigrams": 14,
+          "post_boundary_tokens": 0,
+          "recall": null,
+          "last_recurrence_step": null,
+          "recurrences": [],
+          "unavailable_reason": "boundary_not_reached"
+        },
+        "all_unprotected_affected_step": {
+          "boundary_step": null,
+          "eligible_trigrams": 14,
+          "post_boundary_tokens": 0,
+          "recall": null,
+          "last_recurrence_step": null,
+          "recurrences": [],
+          "unavailable_reason": "boundary_not_reached"
+        },
+        "all_original_affected_step": {
+          "boundary_step": null,
+          "eligible_trigrams": 14,
+          "post_boundary_tokens": 0,
+          "recall": null,
+          "last_recurrence_step": null,
+          "recurrences": [],
+          "unavailable_reason": "boundary_not_reached"
+        }
+      }
+    }
+  ]
+}

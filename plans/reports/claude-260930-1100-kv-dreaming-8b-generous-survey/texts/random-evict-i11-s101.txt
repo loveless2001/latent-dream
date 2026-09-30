@@ -1,0 +1,143 @@
+LOLOLOLOLOLOLOLOLOLLLLLLOLOLLLLLCLCLATLATLATAILYAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJEXPXPXPXPXPXPXPXPXPXPXEMISSISSINISSNGSSGhillisGillisGhillisscheingescheingesupportsupportsupportsupportsupportsupportsupportssupportssupportssupportssupportssupportssupportssupportsororaororaorofficeorofficetotalexplexplexplexplexplexplexplexplexplexplexplexplexplexplexplexplexplexlegendlegendlegendlegacylogloglogsuccesslogrange0987654321ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdaa*EX* Given the mapping above, just return * * Given the mapping for a table * * Given the mappings above * * On disassembly, I will report back again * * On disassembly I may add more text here */
+
+int main()
+
+ {
+
+ int i,j;
+
+ struct td *currenttd,*nexttd;
+
+ struct rl *currentrl,*nextrl;
+
+ char *rows;
+
+ char *sqlrows;
+
+ char *sqltotalrows;
+
+ char *sqlautoincrement;
+
+ int nn,ii;
+
+ opened=1;
+
+ printf("
+
+ Current label: %s
+
+ Row 0: %s
+
+ Auto Increment: %s");
+
+ i=1;
+
+ nn=TotalRowDatfiles();
+
+ while ( i <= nn ) {
+
+ rownumber=i;
+
+ currentting=iTing(rownumber);
+
+ rowlabel=currenttd->label;
+
+ rows=currentting->rows;
+
+ sqlrows=MakeSQL(rows);
+
+ TotalRownumber=currentDatafiles->TotalRownumber;
+
+ TotalRownumber++;
+
+ sqltotalrows=MakeSQL("
+
+ Total number of rows: %d
+
+ On disassembly I will report back again
+
+ On disassembly I may add more text here
+
+ Rows
+
+ Row number: %s
+
+ Auto Increment: %s");
+
+ sqltotalrows=strcat(sqltotalrows,sqltotalrows);
+
+ sqlautoincrement=currenting->autoincrement;
+
+ sqlautoincrement=MakeSQL(sqlautoincrement);
+
+/*
+
+printf("%ss
+
+ sql='%s'",sql,MakeSQL(sql));
+
+printf("%ss
+
+ sqlrows='%s'",sqlrows,MakeSQL(sqlrows));
+
+printf("%ss
+
+ sqltotalrows='%s'",sqltotalrows,MakeSQL(sqltotalrows));
+
+printf("%ss
+
+ sqlautoincrement='%s'",sqlautoincrement,MakeSQL(sqlautoincrement));
+
+printf("%sd
+
+ sob*3*");
+
+*/
+
+closed=1;
+
+ printf("%ss
+
+ sql='
+
+ %s
+
+ ')",sql,MakeSQL(sql));
+
+ printf("%ss
+
+ sqlrows='
+
+ %s
+
+ ')",sqlrows,MakeSQL(sqlrows));
+
+ printf("%ss
+
+ sqltotalrows='
+
+ %s
+
+ ')",sqltotalrows,MakeSQL(sqltotalrows));
+
+ printf("%ss
+
+ sqlautoincrement='
+
+ %s
+
+ ')",sqlautoincrement,MakeSQL(sqlautoincrement));
+
+ printf("%ss
+
+ printf(\"%s\")
+
+ ");
+
+ i++;
+
+ }
+
+ opened=1;
+
+ } /* End maTing Above */<|endoftext|>

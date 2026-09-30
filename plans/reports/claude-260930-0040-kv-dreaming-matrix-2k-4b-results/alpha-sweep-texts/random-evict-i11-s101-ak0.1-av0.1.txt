@@ -1,0 +1,64 @@
+===================================================================					*/
+											++totalWins;
+											totalScore -= 1;
+											endCard = true;
+											break;
+											break;
+										case 4:
+											++twoCards;
+											totalScore += 2;
+											break;
+										}
+									}
+									
+									++round;//every round adds to total rounds
+								}
+								totalRounds += round - 1;
+							}
+						}//h is greater than all the suits in the players hand
+						
+						break;
+					}
+				}//if A = all the suits in the dealerHand
+				
+				
+			//checks to see if there is not a player at all
+			else{
+				cout << "info: there is no one here" << endl;
+			}	
+		}
+		cout << name << " thanks for playing" << endl << " the total score is " << score << endl;
+		cout << " the total rounds played is " << totalRounds << endl;
+		cout << " the total win is " << totalWins << endl;
+		cout << " the total draws is " << totalDraws << endl;
+		cout << " the total loss is " << totalLoss << endl;
+		cout << " the total two cards is " << totalTwoCards << endl;
+		cout << " the total one card is " << totalOneCards << endl;
+		
+		/*assumed the dealer is Ace*/
+		if (calculateCardValue("D", totalDraws) < calculateCardValue("H", totalDraws)){
+			cout << " dealer " << calculateCardValue("D", totalDraws) << " draws" << endl;
+		} else {
+			cout << " dealer " << calculateCardValue("D", totalDraws) << " wins" << endl;
+		}
+		//seaparating between the two
+			
+		if (score == calculateCardValue("D", totalDraws)){
+			cout << " you " << score << " draw" << endl;;	
+		} else if (score < calculateCardValue("D", totalDraws)) {
+			cout << " you " << score << " lose" << endl;
+		} else {
+			cout << " you " << score << " win" << endl;;	
+		}
+		
+		if (totalTwoCards != 0){//if there was two cards dealt than this else will not run
+			cout << " dealer " << 1.5 << " inch" << endl;
+			cout << " you " << 1.5 << " inch" << endl;
+		} else {
+			cout << " dealer " << score << " inch" << endl;
+			cout << " you " << score << " inch" << endl;
+		}
+		
+	}
+	return testResult;
+}<|endoftext|>

@@ -1,0 +1,23 @@
+{
+  "state": "analysis_complete",
+  "tag": "paired-4b-v1",
+  "updated_utc": "2026-09-29T19:01:53.245259+00:00",
+  "present_directions": 32,
+  "expected_directions": 32,
+  "completed_bounded_trajectories": 32,
+  "directions_with_post_reduction_samples": 24,
+  "all_expected_artifacts_consistent": true,
+  "collector_exited": true,
+  "fallback_used": false,
+  "report": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results.md",
+  "artifact_sha256": {
+    "consistency.json": "6b1ae865a13b091466af7e33cbc1073e6e6e67ab1d8d445c2e90da735e802774",
+    "recall.json": "d5366cc5d7485c3b768b3a9d374220548dc33393e4097e4243f24b38c05c88d4",
+    "fragment-crosscheck.json": "6646df99d97614fd80d98f901108ab28deef8d0fcac56363cd29f21d2b49053b",
+    "launcher-index.json": "be009f256992ca891239dae177e4f83a5537b37efd41e4edcea6a6f99eef88a8",
+    "calibration.json": "d152d9e613d2d0589c7940b6bc3fdf8ff5f8d6423992b9ea49b43c32c51bca26",
+    "execution-context.json": "4859c50b8acd7cd62d149a1f27500e706aede8378581329202425661c7ce5be9",
+    "260930-kv-dreaming-paired-results.md": "bb84a387f83ef550a01da0a9b78b2a99118f0639fdf4adb7e5732bc8cca13264"
+  },
+  "note": "Finalized after refreshing artifacts following the completed launcher index; preliminary 31-direction analysis preserved separately. Independent Claude audit pending."
+}

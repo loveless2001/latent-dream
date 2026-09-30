@@ -1,0 +1,55 @@
+*****')),
+      new Field(G)\n";
+
+```t
+putStrLn $ escape (G\_down _down _down \_down _down 
+
+`");
+putStrLn $ escape (G\_up __up __up __up __up __up    _up _up _up _up _up _up _up _up _up _up _up _up _up _up
+
+ `");
+putStrLn $ escape (G\_up _up __up __up __up __up __up __up __up __up __up __up __up __up __up __up\
+__up ___up ___up ___up ___up___up  ___up ___up ___up ___up ___up ___up ___up ___up___up \__up \
+\__up \__up \_up _up  _up _up _up  _up _up \__up  _up _up _up ______ ______ ______\n");
+
+```t
+putStrLn $ escape (G\_up _up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up _up _up _up _up _up _up _up _up _up _up _up _up _up _up _up _up _up _up _up _up _up _up _up __up __up __up\n");
+
+```t
+putStrLn $ escape (G\_up _up __up __up __up __up __up __up __up __up __up __up __up __up __up \
+__up ___up ___up ___up ___up \
+__up __up __up __up 
+
+
+__up __up __up __up __up __up __up __up __up __up __up __up __up __up __up __up
+ 
+  __up __up ___up __up __up __up __up __up ___up ___up 
+__up __up __up __up __up __up __up __up  \___up ____up___up ___up \_up _up  __up __up 
+
+ 
+__up __up __up __up __up __up __up __up __up __up __up 
+
+ _____up ___up ______ __up __up __up __up __up \_up_______up ___up __up __up ___up ___up 
+
+ _up _up _up _up _up ___up ___up ___up ___up 
+ \_\_up _____up ___up __up ________ ___up ___up ___up ___up ___up ___up ___up 
+
+
+
+
+
+
+  
+
+__up __up __up __up __up __up ___up __up __up __up __up __up __up __up __up __up __up __up 
+
+
+
+
+________up  __up __up __up  __  __
+
+
+  __up __up __up 
+\n");
+
+}<|endoftext|>

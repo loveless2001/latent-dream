@@ -1,0 +1,128 @@
+{
+ "1_parity": {
+  "tokens": 48,
+  "max_logit_delta": 0.00015783309936523438,
+  "max_prob_delta": 8.940696716308594e-06,
+  "argmax_equal": true
+ },
+ "2_rope_vs_hf": {
+  "5.0": {
+   "fwd_max_abs": 4.76837158203125e-07,
+   "inv_of_hf_max_abs": 5.960464477539062e-07,
+   "x_max_abs": 3.251028537750244
+  },
+  "5.5": {
+   "fwd_max_abs": 8.344650268554688e-07,
+   "inv_of_hf_max_abs": 8.344650268554688e-07,
+   "x_max_abs": 3.251028537750244
+  },
+  "4097.0": {
+   "fwd_max_abs": 0.0004379153251647949,
+   "inv_of_hf_max_abs": 0.0004698038101196289,
+   "x_max_abs": 3.251028537750244
+  },
+  "16447.0": {
+   "fwd_max_abs": 0.0019940733909606934,
+   "inv_of_hf_max_abs": 0.0018792152404785156,
+   "x_max_abs": 3.251028537750244
+  },
+  "16447.5": {
+   "fwd_max_abs": 0.0019447803497314453,
+   "inv_of_hf_max_abs": 0.0018792152404785156,
+   "x_max_abs": 3.251028537750244
+  }
+ },
+ "3_fractional_merge": {
+  "position": 5.5,
+  "count": 2,
+  "positions_after": [
+   0.0,
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.5,
+   7.0,
+   8.0
+  ],
+  "max_key_err": 2.86102294921875e-06,
+  "max_value_err": 0.0,
+  "length": [
+   20,
+   19
+  ]
+ },
+ "4_dup_logcount": {
+  "dup_vs_merged_max_logit_delta": 7.05718994140625e-05,
+  "dup_vs_undup_max_logit_delta_(should_be_nonzero)": 2.508248805999756
+ },
+ "5_init_scale": {
+  "rand_key_ratio_min_max": [
+   0.2783874273300171,
+   1.6351263523101807
+  ],
+  "rand_val_ratio_min_max": [
+   1.0067771673202515,
+   1.135992169380188
+  ],
+  "soft_key_ratio_min_max": [
+   0.8707304000854492,
+   1.1319959163665771
+  ],
+  "soft_val_ratio_min_max": [
+   0.60649573802948,
+   1.1360830068588257
+  ],
+  "rand_positions": [
+   0.0,
+   63.0
+  ],
+  "bootstrap_position": 64
+ },
+ "6_determinism_crn": {
+  "rerun_identical": true,
+  "evict_vs_merge_identical_pre_reduction": true,
+  "random_vs_empty_first_divergence": 0,
+  "stop_reason": "token_limit",
+  "sec_per_token": 0.18033004591666688
+ },
+ "7_forced_evict": {
+  "summary": {
+   "stop_reason": "token_limit",
+   "error": null,
+   "generated_tokens": 64,
+   "new_tokens": 64,
+   "elapsed_seconds": 11.931408212000008,
+   "cache_length": 80,
+   "next_position": 128,
+   "reduction_events_this_segment": 48
+  },
+  "events": 48,
+  "bytes_per_event": 882.3958333333334,
+  "max_cache_len": 80,
+  "bootstrap_kept": true,
+  "first4_kept": true,
+  "sum_counts_plus_evicted": 80,
+  "fractional_positions": 0
+ },
+ "7_forced_merge": {
+  "summary": {
+   "stop_reason": "token_limit",
+   "error": null,
+   "generated_tokens": 64,
+   "new_tokens": 64,
+   "elapsed_seconds": 12.193517213000007,
+   "cache_length": 80,
+   "next_position": 128,
+   "reduction_events_this_segment": 48
+  },
+  "events": 48,
+  "bytes_per_event": 16089.291666666666,
+  "max_cache_len": 80,
+  "bootstrap_kept": true,
+  "first4_kept": true,
+  "sum_counts_plus_evicted": 128,
+  "fractional_positions": 48
+ },
+ "elapsed_seconds": 79.35325823199997
+}

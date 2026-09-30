@@ -1,0 +1,85 @@
+accounts_type = {
+    'bank1': [{'id': 202, 'fullname': 'Даня'},
+              {'id': 203, 'fullname': 'Поликарп'},
+              {'id': 204, 'fullname': 'Анна'},
+              {'id': 205, 'fullname': 'Марго'},
+              {'id': 206, 'fullname': 'Алина',
+               'address': 'добрым адресс'}],
+    'bank2': [{'id': 201, 'fullname': 'Никита'}],
+    'bank3': [{'id': 205, 'fullname': 'Черная', 'password': '123'}]}
+
+print(accounts_type.get('a').get('1').get('id'))
+print(accounts_type.get('a'))
+print(accounts_type)
+print(accounts_type.copy())
+
+for a in accounts_type:
+    for b in accounts_type.get(a):
+        print(accounts_type.get(a))
+for a in accounts_type:
+    print(a)
+for a in accounts_type:
+    for b in accounts_type.get(a):
+        print(b.get('password'))
+
+for a in accounts_type:
+    for b in accounts_type.get(a):
+        if b.get('address'):
+            print(f'{a} {b.get("id")} {b.get("fullname")} {b.get("address")}')
+
+
+while True:
+    choice = input("Пополнение: 1\n"
+                   "Информация о клиенте: 2\n"
+                   "Вывести список клиентов из базы данных: 3\n"
+                   "Выход: 4\n")
+    if choice == "1":
+        print("Для доступа к базе данных необходимо ввести pass: 123")
+        print(accounts_type.get('bank3'))
+        if input("Do you own this bank?: ").lower() == "yes":
+            print("Введите ваши id и пароль")
+            id = int(input())
+            if id in [(i.get('id'))for i in accounts_type.get('bank3')]:
+                for i in [(i.get('id'))for i in accounts_type.get('bank3')]:
+                    if id == i:
+                        password = input("Введите пароль:")
+                        if password == accounts_type.get('bank3').get(id - 205 - 1).get('password'):
+                            print(accounts_type.get('bank3').get(id - 205 - 1).get('password'))
+                        else:
+                            print('Доступ недостноной базы данных. Поставте лицензию на ваш id')
+                            accounts_type.get('bank3').get(id - 205 - 1).set('password', '123')
+                            print(accounts_type.get('bank3').get(id - 205 - 1).get('password'))
+                            print('неудачная попыка')
+                            break
+            else:
+                print('неудачная попыка')
+            for i in accounts_type.get('bank3'):
+                if (i.get('id')) == id:
+                    money = int(input("Введите количесво:"))
+                    if money > (i.get('id')):
+                        money  -+ (i.get('id'))
+                        print(("    "))
+                        print(f"Расколысие верно {money}")
+                        break
+                    else:
+                        print('рыбы')
+                elif money > (i.get('id')):
+                    print(("    "))
+                    print(f"Расколысие верно {money}")
+                    break
+                elif (i.get('id')) == id:
+                    money  -+ (i.get('id'))
+                    print(("    "))
+                    print(f"Расколысие верно {money}")
+                    break
+                elif money > (i.get('id')):
+                    print(("    "))
+                    print(f"Расколысие верно {money}")
+                    break
+                elif (i.get('id')) == id:
+                    money - (i.get('id'))
+                    print(("    "))
+                    print(f"Расколысие верно {money}")
+                    break
+        else:
+            print('неудачная попыка')<|endoftext|>

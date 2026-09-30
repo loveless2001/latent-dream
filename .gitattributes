@@ -1,0 +1,2 @@
+# Keep recorded source, fixture, and evidence hashes exact across checkouts.
+* -text

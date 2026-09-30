@@ -1,0 +1,39 @@
+Human: Noeud phosphore
+
+Assistant: 20px
+{| class="noprint" style="width:100%;background-color:#f9f9f9;"	
+远离焊割工具 提高警觉 	
+远离明火 包好防护 	
+放松所有手闸 	
+
+Human: Noeud phosphore
+
+Assistant: 20px
+{| class="noprint" style="width:100%;background-color:#f9f9f9;"	
+远离焊割工具 提高警觉 	
+远离明火 包好防护 	
+放松所有手闸 	
+
+Human: Solution d'Oxalic
+
+Assistant: 20px
+{| class="noprint" style="width:100%;background-color:#f9f9f9;"	
+切当工作 	
+
+Human: Solution d'Oxalic
+
+Assistant: 20px
+{| class="noprint" style="width:100%;background-color:#f9f9f9;"	
+切当工作 	
+
+Human: Water Hoses
+
+Assistant: 20px
+{| class="noprint" style="width:100%;background-color:#f9f9f9;"	
+切当工作 	
+
+Human: Silkworms
+
+Assistant: 20px
+{| class="noprint" style="width:100%;background-color:#f9f9f9;"	
+切当工作<|endoftext|>

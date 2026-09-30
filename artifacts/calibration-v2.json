@@ -1,0 +1,27 @@
+{
+  "schema": 2,
+  "method": "coordinate_gaussian_unrotated_keys_values",
+  "identity": {
+    "model": "Qwen/Qwen3-0.6B-Base",
+    "revision": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+    "dtype": "float32",
+    "device": "cpu",
+    "threads": 4,
+    "attention": "shared_explicit_eager"
+  },
+  "sha256": "f679a8e348099db7a855adcc40746cb987e54f65d87157bbf52ba2d3e092c8cd",
+  "fixture_sha256": "876cf85e4ee35987e57d157bab6584ab093fa0985786aaa212a86492a58049e2",
+  "token_count": 1024,
+  "excluded_leading_tokens": 4,
+  "source_hashes": {
+    "__init__.py": "086d21e6b0dd8513f75d5c55397368c74216aac25c1f0e912ca25c7f4dd06496",
+    "cache.py": "6cf0d26ff038bf587939e4256083f2327d045c749b8496c1cafc77b1b73f2655",
+    "cli.py": "60eae792d0f9feee34c6c1491577b91d545d2abc8be909a3aabb702fc89eaea2",
+    "diagnostic.py": "af5a3e4da26b0baa4b5c45c3123550bcb2df11365f89c3e296c9b0ccaac54224",
+    "rope.py": "4da86de72f6023d4104588436aced0e1dabab2cb8c653a954892ef4ef42c3943",
+    "runner.py": "bc66ea5905d67899741691d3e2b532b56113c74fc4b781bc6ebe1c498a969e1f",
+    "runtime.py": "58460eb774a46250cf02cb9b22c22248f90353a391c932c1f9409dc7f06a5449",
+    "sampling.py": "e1498f6d54d1bbd5bcbeb01ae5ea291aa35015525a915eb90dccb00d859a68fa",
+    "seeding.py": "232d7285307ce3417fef54c506908e30bf3b7d31f45e28209fd33d2aee3e25ff"
+  }
+}

@@ -1,0 +1,76 @@
+#!/usr/bin/env python
+# coding: UTF-8
+"""
+Python 2 版本中，Python并不支持 unicode raw 字符串，需要这样写：
+"""
+
+x = u"""
+
+"""
+
+"""
+Python 3 版本中则相对更方便，而且是unicode编码，可产生错误。
+
+所以建议你尽量使用Python 3版本，若必须采用2版本，请写成这样：
+
+name = """
+"""
+#unicode编码
+x = u"""
+"""
+
+
+from __future__ import unicode_literals
+ 
+import datetime
+import sys
+ 
+from django.db import models
+try:
+    unicode_literal = repr("hello")               # 弹出 pygame 的 utf-8 字符串正确编码
+except:
+    type_ = type(repr(b"hello")) # <class 'str'>
+    def to_unicode(s):
+        return str(s)
+    try:                                         # 使用 sre_parse 模块成功高性能编码，2.6 版本的库就是这个问题
+        import sre_parse                  # Importing here avoids a circular reference
+        class UnicodeStr(str):
+            def __init__(self, **kw):
+                str.__init__(self, **kw)
+            def __add__(self, other):
+                if type(other) == type(UnicodeStr):
+                    other = other.encode('utf-8')
+                return str.__add__(self, other)
+        squeeze = sre_parse.squeezed_unicode
+        class SupportedUnicodeStr(UnicodeStr):
+            def __new__(cls, s, encode="utf-8", squeeze=(squeeze)):
+                self = UnicodeStr.__new__(cls, s, encode=encode, squeeze=squeeze)
+                # The squeeze flag didn't exist in our environment:
+                # self.squeezed = sre_parse.squeezed(self, squeeze)
+                self.squeezed = s
+                return self
+    except ImportError:
+        pass
+    unicode_literal = '<undefined>???'
+    sys.hexversion = 0x030000
+    
+
+
+# 记载当前日期
+class FileDataMarker(models.Model):
+ 
+    
+    """标记用的表格"""
+
+    title = models.CharField(max_length=500, null=True, verbose_name='标题name')
+    
+    content = models.TextField(null=True, verbose_name='文本内容')
+    
+    attachfile = models.CharField(max_length=250, null=True, verbose_name='附件名')
+    
+    author = models.CharField(max_length=10, null=True, verbose_name='作者')
+    
+    adddate = models.DateTimeField(null=True, verbose_name='添加日期')  
+ 
+    def __str__(self):
+        return self.title<|endoftext|>

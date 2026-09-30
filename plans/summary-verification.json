@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-01",
+  "basis": "Read-only recomputation of retained launcher summaries, matrix stats, and paired analysis JSON; no model inference.",
+  "batches": {
+    "matrix-2k-4b-v2": {
+      "source": "modal/runs-index/matrix-2k-4b-v2.json",
+      "source_sha256": "8298f7a5fe29a53e65b10fbb2dfadaad41c7916490778e6fa53eb6d26ee926f2",
+      "trajectories": 36,
+      "successful_launcher_calls": 36,
+      "stops": {
+        "eos": 34,
+        "token_limit": 2
+      },
+      "trajectories_with_reductions": 26
+    },
+    "alpha-sweep-4b-v2": {
+      "source": "modal/runs-index/alpha-sweep-4b-v2.json",
+      "source_sha256": "d1e5c5e859cea1f29bf846b3a989157104f295ca2253152e346d610366034392",
+      "trajectories": 12,
+      "successful_launcher_calls": 12,
+      "stops": {
+        "eos": 11,
+        "token_limit": 1
+      },
+      "trajectories_with_reductions": 9
+    },
+    "survey-8b-generous-v1": {
+      "source": "modal/runs-index/survey-8b-generous-v1.json",
+      "source_sha256": "6bdf513b3e996697a7dd12c79ebaf34a5d9c0305b9827f8a2901b8cc4e3cd6b5",
+      "trajectories": 20,
+      "successful_launcher_calls": 20,
+      "stops": {
+        "eos": 16,
+        "token_limit": 4
+      },
+      "trajectories_with_reductions": 6,
+      "cells": {
+        "empty": {
+          "n": 4,
+          "stops": {
+            "eos": 4
+          },
+          "with_reductions": 1
+        },
+        "soft": {
+          "n": 4,
+          "stops": {
+            "eos": 4
+          },
+          "with_reductions": 0
+        },
+        "random alpha=0.25": {
+          "n": 4,
+          "stops": {
+            "eos": 3,
+            "token_limit": 1
+          },
+          "with_reductions": 1
+        },
+        "random alpha=1.0": {
+          "n": 4,
+          "stops": {
+            "eos": 1,
+            "token_limit": 3
+          },
+          "with_reductions": 3
+        },
+        "fragment": {
+          "n": 4,
+          "stops": {
+            "eos": 4
+          },
+          "with_reductions": 1
+        }
+      },
+      "report_correction": "The historical report says 5/20 trajectories reached a reduction; executed summaries show 6/20: empty/i11/s202, fragment/i23, random alpha=.25/i89, and random alpha=1/i23,i47,i89."
+    },
+    "alpha-sweep-8b-v1": {
+      "source": "modal/runs-index/alpha-sweep-8b-v1.json",
+      "source_sha256": "c848664d2225de8101ad6d8b3cdd201ae0149ec8ca5697f68afba5c0f87a9160",
+      "trajectories": 12,
+      "successful_launcher_calls": 12,
+      "stops": {
+        "eos": 5,
+        "token_limit": 7
+      },
+      "trajectories_with_reductions": 8
+    },
+    "paired-4b-v1": {
+      "source": "plans/reports/260930-kv-dreaming-paired-results/consistency.json",
+      "source_sha256": "6b1ae865a13b091466af7e33cbc1073e6e6e67ab1d8d445c2e90da735e802774",
+      "trajectories": 32,
+      "stops": {
+        "eos": 31,
+        "token_limit": 1
+      },
+      "post_reduction_directions": 24,
+      "exact_gate_checks": 1640,
+      "gate_failures": 0
+    },
+    "paired-4b-sink-v1": {
+      "source": "plans/reports/260930-kv-dreaming-fragment-sink-results/consistency.json",
+      "source_sha256": "1972fcc4d53eac56ee6f22986134969c958624111e918e80015e6df5691409cd",
+      "trajectories": 16,
+      "stops": {
+        "eos": 12,
+        "token_limit": 4
+      },
+      "post_reduction_directions": 16,
+      "exact_gate_checks": 1024,
+      "gate_failures": 0
+    }
+  },
+  "fragment_primary": {
+    "source": "plans/reports/260930-kv-dreaming-fragment-sink-results/comparison.json",
+    "source_sha256": "afaa660bc16ca9b24db7273592e1e344960777c30ae1f1ef4a54b1a468f51721",
+    "baseline": {
+      "P1_no_reduction": 8,
+      "P2_loop_flag": 5,
+      "P3_pre_reduction_trigram_hit": 2
+    },
+    "sink": {
+      "P1_no_reduction": 0,
+      "P2_loop_flag": 2,
+      "P3_pre_reduction_trigram_hit": 2
+    },
+    "verdict": "STOP_FRAGMENT_STARTS"
+  },
+  "matrix_loop_flags": {
+    "empty": {
+      "n": 4,
+      "loop_flags": 0
+    },
+    "random": {
+      "n": 16,
+      "loop_flags": 16
+    },
+    "soft": {
+      "n": 16,
+      "loop_flags": 0
+    }
+  },
+  "total_primary_trajectories": 128,
+  "total_primary_stops": {
+    "eos": 109,
+    "token_limit": 19
+  },
+  "replication_note": "128 trajectories across six primary batches; excludes mechanics, smoke/timing/audit runs. Shared starts, two leader directions, and reused survey points are not independent replicates."
+}

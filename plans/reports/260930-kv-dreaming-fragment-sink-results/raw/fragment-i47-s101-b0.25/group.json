@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "kind": "paired_group",
+  "initial_cache_sha256": "d134545eaba2c4068a32852cf6f33da1d85df86b922276f80019ee8cd50daad5",
+  "source_hashes": {
+    "__init__.py": "086d21e6b0dd8513f75d5c55397368c74216aac25c1f0e912ca25c7f4dd06496",
+    "cache.py": "6cf0d26ff038bf587939e4256083f2327d045c749b8496c1cafc77b1b73f2655",
+    "cli.py": "479ef69ad477660f16d588467f98a502590bec524a982acd724b03d92218c639",
+    "diagnostic.py": "af5a3e4da26b0baa4b5c45c3123550bcb2df11365f89c3e296c9b0ccaac54224",
+    "fragments.py": "4966a953f14ab1d82c0d994a2b91bcb7a0fa07373f4a72e336e03a6447fa7e32",
+    "pair_metrics.py": "029069eb55655ecd941922a2fb8ec51ff1115304ecb79304a856486e463ae71f",
+    "paired.py": "b8cb4fb55d49b5fe6e91db1ff99e86b56cfe8bec221b199224793242dc2096a1",
+    "rope.py": "4da86de72f6023d4104588436aced0e1dabab2cb8c653a954892ef4ef42c3943",
+    "runner.py": "e3efa052c0287a71a458b7edbb94e22f8686d72399cc273f3d3e0a88dec87c38",
+    "runtime.py": "58460eb774a46250cf02cb9b22c22248f90353a391c932c1f9409dc7f06a5449",
+    "sampling.py": "e1498f6d54d1bbd5bcbeb01ae5ea291aa35015525a915eb90dccb00d859a68fa",
+    "seeding.py": "232d7285307ce3417fef54c506908e30bf3b7d31f45e28209fd33d2aee3e25ff"
+  },
+  "config": {
+    "initial_state": "fragment",
+    "policy": "evict",
+    "prefix_length": 65,
+    "budget": 128,
+    "recent": 64,
+    "initialization_seed": 47,
+    "sampling_seed": 101,
+    "max_tokens": 2048,
+    "max_seconds": 900.0,
+    "snapshot_every": 0,
+    "alpha_k": 1.0,
+    "alpha_v": 1.0,
+    "fragment_beta": 0.25,
+    "fragment_sink": "bos"
+  }
+}

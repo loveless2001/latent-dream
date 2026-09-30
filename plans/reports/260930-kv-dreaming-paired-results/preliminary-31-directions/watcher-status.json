@@ -1,0 +1,10 @@
+{
+  "state": "analysis_complete",
+  "tag": "paired-4b-v1",
+  "updated_utc": "2026-09-29T18:54:01.398255+00:00",
+  "elapsed_seconds": 715.9,
+  "present_directions": 31,
+  "expected_directions": 32,
+  "all_expected_artifacts_consistent": false,
+  "report": "/home/lenovo/projects/plans/reports/260930-kv-dreaming-paired-results.md"
+}

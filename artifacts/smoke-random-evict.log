@@ -1,0 +1,1 @@
+{"stop_reason": "token_limit", "error": null, "generated_tokens": 128, "new_tokens": 128, "elapsed_seconds": 27.965289128999984, "cache_length": 192, "next_position": 192, "reduction_events_this_segment": 0}

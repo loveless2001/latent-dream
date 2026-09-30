@@ -1,0 +1,171 @@
+*****')),
+      new Field(G)\n";
+
+```t
+putStrLn $ escape (G\_down _down _down \_down _down 
+
+`");
+putStrLn $ escape (G\_up __up __up __up __up __up    _up _up _up _up _up _up _up _up _up _up _up _up _up _up
+
+ If you know some JavaScript or another language with string
+ concatenation, this operation is equivalent to embracing the string in
+ one concatenation operator (single or double quotes), except that the
+ concatentration operator is infix rather than postfix, e.g._
+
+  qw"hello world"
+
+  is equivalent to
+
+  qw'h' ++ 'w' ++ 'l' ++ 'l' ++ 'o' ++  ' ' ++'w' ++ 'o' ++ 'r' ++ 'l' ++'d'
+
+ The algorithm is analogous with respect to the operator ^x, e.g._
+
+ (join ^x 'hello world')
+
+  is equivalent to_
+
+  join ^'h' ^'w' ^'l' ^'l' ^'o' ^' ' ^'w' ^'o' ^'r' ^'l' ^'d'
+
+ In the case that the left argument is a constant number of the form x, the list x is skipped, and the operator is applied to adjacent elements in the separator list, given as described in adjacent_ Expand!
+
+ This cannot be expressed in the form of the sequence number. !, given that the assignment operator = does not produce different results than the adjacent expansion, given that the assignment operator = does not produce different results than the adjacent_ Expand! Yes, no, unless the constant number x is assigned to the object. = or 0.
+
+ The power # is the same as the power #_ Expand! The only difference is that the separator list is not shuffled.
+
+ **Examples:**
+```syntax
+   (0 | #_ Expand!) ([1000 1 3000])
+```Lisp
+
+ In this example, the object. =[1000 ... 3000 ])
+```syntax
+   ()
+```Lisp
+'''Return Value:'''
+Int 
+
+```syntax
+   (0 | #_ Expand!) ([1000 1 3000])
+```Lisp
+
+ In this example, the expression. [1000 ... 3000 ], we take the object returned by #, the 2nd argument is a pointer to this object.
+
+ #, the 1st argument is required to specify the length of the array. ( [1000 ... 3000 ]) ; the 2nd argument is a pointer to this object.
+
+ In this example, the 2nd argument is a pointer to the object returned by #.
+```
+
+There are a few point here:
+
+1. # and & have special meanings in Ruby, they are used to convert (convert) the object to memory address and convert memory address to object, so they cannot be used directly in regular strings and regular expressions; best to need to use \ to escape them.
+2. Ruby is sensitive to syntax, a normal blank string "" and a regular expression / are separated by the " / " symbol and have different meanings, if "\" is missing and there is / in a regular expression, it will be considered as regular expression, so the writing method will cause a syntax error.
+
+Therefore, when writing regular expressions, normal string and regular expression should be used separately, avoid using them at the same time to avoid mistakes.
+
+• Perl
+
+Perl regular expression is more generic, but owing to its syntax is more complicated, usually less used. Perl also has the above mentioned group, repetition, and selection, as well as additional regular expression operations methods and group methods.
+
+Perl has an English size letter matching method "A ?sh =~ x" and the value after matching is correct (1). The error here is only that A matches any English letter and "x must match the value of the variable itself and cannot match any string.
+
+Secondly, non-character is defined by Perl, which matches only non-table characters. Perl's nongresa consulted is: /^[^\s]+$/ . Other non-character here matches noncharacters, followed by any ascii decimal digits character.
+
+Next is nonstring, which is the regular expression language defined by Perl, such as ____ y, which matches the corresponding file or shirt. You can also define it with non-string, such as ____ y, but emphasize that y is not a string. The formerly defined file is file ____ y, s is for string, without s is string.
+
+rs. Here I will extend the explanation in Perl to a simple EXPR. Regular expressions, such as ___ ____ y, are sometimes regularly sufficient, to understand, so I often refer to string ____, file or cigar ____ y.
+
+Next is nonis, which do not understand it, sometimes nonis is less important, and if it is frequently used, it can be learned to understand it.
+
+1. Regular Expression in SQL
+
+1.1 Regular Expression in MySQL
+
+MySQL supports five types of regular expression, and regular expression supports 16 operations. If you want to know the following content, please refer to Appendix A for a complete list of EXPR operation sets.
+
+1.1.1 Expressed Syntax
+
+Regular expressions in MySQL always use the regular expression expression search-order and the index must be compatible. Some operations and indexing of the regular expression may slow down the performance of the regular expression.
+
+The following operation only first-order matching, but not second-order matching.
+
+Expression Dirt_for Comparison
+
+expr ^ pat expr $ pat
+
+expr pat
+
+order C match
+
+expr pat
+
+6 C match
+
+When there are expressions on the left and right can not match when expr is compared the first and second expression.
+
+Expression Dirt_for Comparison
+
+abc ^ ^ pat
+
+abc ^ $ pat
+
+pat ^ ^ abc
+
+pat ^ $ abc
+
+pat $ ^ abc
+
+pat $ $ abc
+
+expr pat
+
+expression matches on the left and right.
+
+Expression Dirt_for Comparison
+
+abc ^ ^ pat $ abc
+
+abc ^ $ pat $ abc
+
+pat ^ ^ abc $ pat
+
+pat ^ $ abc $ pat
+
+pat $ ^ abc $ pat
+
+pat $ $ abc $ pat
+
+str ^ |$ str
+
+str |^ str
+
+abc ^abc ^ str
+
+abc | str ^abc
+
+abc ^ str ^ abc
+
+str ^ abc ^ str
+
+str | str ^ str
+
+str ^ str ^ | str
+
+abc ^ abc ^ abc
+
+abc ^abc ^ abc |
+
+expression in bc beginning, end with str or and();
+
+expression prestr in bc ending in those southwords;
+
+expression beginning with abc and ending in bcnorth;
+
+expression beginning with abc you 1st south ad strafterit;
+
+expression containing an undirected row itm in 0 there; balf; c str bch;
+
+express wt the ren 2 of 3016 1611001;
+
+express wt the ren 2 of 16120313it100;
+
+expression beginning with abc exhibiting1 t str end; If I It 16111000st; 696 after my; If I It 16101000 itbli; 3 after you; If I It 16101000ittn; If I It 16101000itritティブ.<|endoftext|>

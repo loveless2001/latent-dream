@@ -1,0 +1,14 @@
+{
+  "identity": {
+    "model": "Qwen/Qwen3-0.6B-Base",
+    "revision": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+    "dtype": "float32",
+    "device": "cpu",
+    "threads": 4,
+    "attention": "shared_explicit_eager"
+  },
+  "sha256": "04d260d3f859940febc5d3e8aa20e8abbf794c79ff30096038732a1949024f93",
+  "fixture_sha256": "876cf85e4ee35987e57d157bab6584ab093fa0985786aaa212a86492a58049e2",
+  "token_count": 1024,
+  "excluded_leading_tokens": 4
+}

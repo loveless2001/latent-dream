@@ -1,0 +1,33 @@
+#!/usr/bin/env python
+# coding: UTF-8
+"""
+Python 2 版本中，Python为什么可以字符串转数字或者数字转字符串？
+
+在Python 2中，我们可以利用字符串和数字之间的隐式转换来读取客户端提交的请求数据，通过str.isdigit()函数来判断数据是否由数字构成，最终判断是否可以进行合法操作：
+- 是否进行数字或字符串转换
+
+"""
+
+def get_n():
+	while 1:
+		user_n=str(raw_input('input a integer number:\n'))
+		if user_n.isdigit():
+			return int(user_n)
+		elif len(user_n) > 50:
+			print '输入的字符串长度超过50字符!'
+		else:
+			print '输入的字符不是整数！'
+
+n = get_n()
+print n*2
+
+"""
+Python 3 现在是不可以直接转换
+
+# 原因 analysis 幾乎
+34 + "2" + 'hello'
+Traceback (most recent call last):
+  File "<pyshell#14>", line 1, in <module>
+    34 + "2" + 'hello'
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+"""<|endoftext|>

@@ -1,0 +1,11 @@
+def linear_search(arr, num ):
+    
+    for el in range(len(arr)):
+        if num == arr[el]:
+            return "found at location :" + str(el)
+        
+    return "number not present"
+    
+arr = [1,3,5,2,6,8,10,14,16,17]
+num = 2
+print(linear_search(arr, num))<|endoftext|>

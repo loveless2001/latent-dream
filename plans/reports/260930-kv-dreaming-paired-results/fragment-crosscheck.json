@@ -1,0 +1,13 @@
+{
+  "fragment_directions": 16,
+  "replayed_reduction_events": 5626,
+  "fragment_boundary_measurements": 192,
+  "observed_available": 75,
+  "adjusted_available": 62,
+  "observed_positive": 0,
+  "errors": [],
+  "passed": true,
+  "recall_json_sha256": "d5366cc5d7485c3b768b3a9d374220548dc33393e4097e4243f24b38c05c88d4",
+  "script_sha256": "08f41f3613b1e75f01e61e2f2981a00353585a14291a2af495aafe336b5f7e83",
+  "scope": "Separate event/token replay; no model execution or cache tensor inspection."
+}

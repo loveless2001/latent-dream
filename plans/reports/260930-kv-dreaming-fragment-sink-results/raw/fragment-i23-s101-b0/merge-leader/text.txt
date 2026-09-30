@@ -1,0 +1,37 @@
+#!/usr/bin/env python
+
+class game(object):
+
+  def __init__(self, ytoscore):
+    self.ytoscore = ytoscore
+    self.score = [0,0]       # score is first team, second team
+
+  def ask (self, question, manpacly, backility, dualputer):
+    print question
+
+    while True:
+      animate( manpacly, backility, dualputer)
+
+  def wlw (self, ans, corr):
+    if (ans.lower() == corr.lower()):
+      print 'Correct'
+      return True
+    else: print 'Wrong!'
+    return False
+  
+  def wlp (self, ans, corr):
+    try:
+      afn = int(ans)
+    except: print "Sorry, that's not a name"
+    else:
+      if (afn in corr):
+        print 'Correct!'
+        return True
+      else: print 'Wrong! Not in line'
+    return False 
+
+def main():
+  import sys
+
+if __name__ == "__main__":
+  main()<|endoftext|>

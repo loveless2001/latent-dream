@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="46" time="3.124" timestamp="2026-09-30T09:38:35.498172+07:00" hostname="LAPTOP-JLT9RUVS"><testcase classname="tests.test_calibration" name="test_calibration_unrotates_and_excludes_initial_slots" time="0.077" /><testcase classname="tests.test_calibration" name="test_random_keys_use_calibrated_content_without_renormalizing" time="0.023" /><testcase classname="tests.test_calibration" name="test_rotation_matches_model_at_long_fractional_positions" time="0.016" /><testcase classname="tests.test_calibration" name="test_merge_norm_summary_handles_zero_keys" time="0.011" /><testcase classname="tests.test_diagnostic" name="test_diagnostic_keeps_aligned_prediction_rows[1]" time="0.079" /><testcase classname="tests.test_diagnostic" name="test_diagnostic_keeps_aligned_prediction_rows[5]" time="0.058" /><testcase classname="tests.test_fragments" name="test_fragment_splice_rephases_hf_keys_and_keeps_values[none]" time="0.049" /><testcase classname="tests.test_fragments" name="test_fragment_splice_rephases_hf_keys_and_keeps_values[bos]" time="0.047" /><testcase classname="tests.test_fragments" name="test_beta_changes_noise_without_changing_fragment_selection" time="0.058" /><testcase classname="tests.test_fragments" name="test_default_fragment_cache_matches_frozen_v1_bitwise[0.0]" time="0.070" /><testcase classname="tests.test_fragments" name="test_default_fragment_cache_matches_frozen_v1_bitwise[0.25]" time="0.075" /><testcase classname="tests.test_fragments" name="test_bos_slot_is_bitwise_prefill_and_never_noised[0.0]" time="0.048" /><testcase classname="tests.test_fragments" name="test_bos_slot_is_bitwise_prefill_and_never_noised[0.25]" time="0.051" /><testcase classname="tests.test_fragments" name="test_sink_pair_gate_and_fragment_boundary_with_native_attention" time="0.634"><failure message="AssertionError: Regex pattern did not match.&#10; Regex: '65'&#10; Input: 'prefix/budget or checkpoint position limit exceeded'">runtime = &lt;kv_dreaming.runtime.QwenRuntime object at 0x75104449dbe0&gt;
+tmp_path = PosixPath('/tmp/pytest-of-lenovo/pytest-10/test_sink_pair_gate_and_fragme0')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x75104449d1c0&gt;
+
+    def test_sink_pair_gate_and_fragment_boundary_with_native_attention(runtime, tmp_path, monkeypatch):
+        manifest = source_fixture(tmp_path, runtime)
+        runtime.tokenizer.decode = lambda tokens, **kwargs: " ".join(map(str, tokens))
+        state, meta = initialize_fragment(runtime, manifest, sink="bos")
+        native_step = runtime.step
+    
+        def step(token, cache):
+            logits = native_step(token, cache)
+            logits[2] = -1000.  # Mechanical check must reach a reduction.
+            return logits
+    
+        monkeypatch.setattr(runtime, "step", step)
+        monkeypatch.setattr(paired, "STOP_ID", 2)
+        monkeypatch.setattr(paired, "DELIMITERS", {"blocked": 63})
+        config = PairConfig(initial_state="fragment", fragment_sink="bos", prefix_length=65, max_tokens=66)
+        results = run_both(runtime, state, config, tmp_path / "paired", identity={}, initialization_metadata=meta)
+        for summary in results.values():
+            assert summary["first_reduction_step"] == 63
+            assert summary["pre_reduction_gate_checks"] == 64
+            assert summary["post_reduction_steps"] == 2
+            assert summary["fragment_pre_reduction"]["window_tokens"] == 64
+            first = summary["fragment_boundaries"]["leader"]["0"]
+            assert first["first_affected_step"] == 63 and first["protected_positions"] == [1, 2, 3]
+            assert first["all_original_affected_step"] is None
+        with pytest.raises(ValueError, match="65"):
+&gt;           PairConfig(initial_state="fragment", fragment_sink="bos", prefix_length=64).validate(runtime)
+
+tests/test_fragments.py:151: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/kv_dreaming/paired.py:29: in validate
+    super().validate(runtime)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PairConfig(initial_state='fragment', policy='evict', prefix_length=64, budget=128, recent=64, initialization_seed=11, ...max_tokens=2048, max_seconds=900.0, snapshot_every=0, alpha_k=1.0, alpha_v=1.0, fragment_beta=0.0, fragment_sink='bos')
+runtime = &lt;kv_dreaming.runtime.QwenRuntime object at 0x75104449dbe0&gt;
+
+    def validate(self, runtime):
+        if self.initial_state not in {"empty", "random", "soft", "fragment"} or self.policy not in {"evict", "merge"}:
+            raise ValueError("invalid initial state or cache policy")
+        if self.max_tokens &lt; 1 or self.max_seconds &lt;= 0 or self.snapshot_every &lt; 0:
+            raise ValueError("invalid execution limit")
+        if self.budget &lt; self.recent + 7 or self.recent &lt; 1 or self.prefix_length &lt; 4:
+            raise ValueError("invalid cache limits")
+        n = 0 if self.initial_state == "empty" else self.prefix_length
+        if n &gt; self.budget or n + self.max_tokens &gt; runtime.model.config.max_position_embeddings:
+&gt;           raise ValueError("prefix/budget or checkpoint position limit exceeded")
+E           ValueError: prefix/budget or checkpoint position limit exceeded
+
+src/kv_dreaming/runner.py:43: ValueError
+
+During handling of the above exception, another exception occurred:
+
+runtime = &lt;kv_dreaming.runtime.QwenRuntime object at 0x75104449dbe0&gt;
+tmp_path = PosixPath('/tmp/pytest-of-lenovo/pytest-10/test_sink_pair_gate_and_fragme0')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x75104449d1c0&gt;
+
+    def test_sink_pair_gate_and_fragment_boundary_with_native_attention(runtime, tmp_path, monkeypatch):
+        manifest = source_fixture(tmp_path, runtime)
+        runtime.tokenizer.decode = lambda tokens, **kwargs: " ".join(map(str, tokens))
+        state, meta = initialize_fragment(runtime, manifest, sink="bos")
+        native_step = runtime.step
+    
+        def step(token, cache):
+            logits = native_step(token, cache)
+            logits[2] = -1000.  # Mechanical check must reach a reduction.
+            return logits
+    
+        monkeypatch.setattr(runtime, "step", step)
+        monkeypatch.setattr(paired, "STOP_ID", 2)
+        monkeypatch.setattr(paired, "DELIMITERS", {"blocked": 63})
+        config = PairConfig(initial_state="fragment", fragment_sink="bos", prefix_length=65, max_tokens=66)
+        results = run_both(runtime, state, config, tmp_path / "paired", identity={}, initialization_metadata=meta)
+        for summary in results.values():
+            assert summary["first_reduction_step"] == 63
+            assert summary["pre_reduction_gate_checks"] == 64
+            assert summary["post_reduction_steps"] == 2
+            assert summary["fragment_pre_reduction"]["window_tokens"] == 64
+            first = summary["fragment_boundaries"]["leader"]["0"]
+            assert first["first_affected_step"] == 63 and first["protected_positions"] == [1, 2, 3]
+            assert first["all_original_affected_step"] is None
+&gt;       with pytest.raises(ValueError, match="65"):
+E       AssertionError: Regex pattern did not match.
+E        Regex: '65'
+E        Input: 'prefix/budget or checkpoint position limit exceeded'
+
+tests/test_fragments.py:150: AssertionError</failure></testcase><testcase classname="tests.test_mechanics" name="test_rotary_round_trip_fractional" time="0.004" /><testcase classname="tests.test_mechanics" name="test_full_forward_and_custom_logits" time="0.054" /><testcase classname="tests.test_mechanics" name="test_eviction_matches_dense_masked_continuation" time="0.031" /><testcase classname="tests.test_mechanics" name="test_merge_weighted_fractional_position_and_protection" time="0.021" /><testcase classname="tests.test_mechanics" name="test_count_bias_preserves_duplicate_attention" time="0.011" /><testcase classname="tests.test_mechanics" name="test_repeated_reductions_bounded_and_bootstrap_retained[evict]" time="0.236" /><testcase classname="tests.test_mechanics" name="test_repeated_reductions_bounded_and_bootstrap_retained[merge]" time="0.283" /><testcase classname="tests.test_mechanics" name="test_sampler_mask_zero_uniform_and_stop" time="0.034" /><testcase classname="tests.test_mechanics" name="test_prefix_initialization_reproducibility" time="0.019" /><testcase classname="tests.test_mechanics" name="test_snapshot_restores_merged_state_and_continuation" time="0.125" /><testcase classname="tests.test_pair_metrics" name="test_recall_excludes_boundary_crossing_and_preserves_null" time="0.000" /><testcase classname="tests.test_pair_metrics" name="test_fragment_boundaries_retain_pinned_originals" time="0.000" /><testcase classname="tests.test_pair_metrics" name="test_shifted_fragment_boundaries_do_not_treat_sink_as_fragment" time="0.000" /><testcase classname="tests.test_pair_metrics" name="test_fragment_p3_includes_trigger_sample_and_excludes_crossing_trigram" time="0.000" /><testcase classname="tests.test_pair_metrics" name="test_cross_run_baseline_and_contamination_exclusion" time="0.012" /><testcase classname="tests.test_paired" name="test_shadow_uses_leader_history_and_checks_first_reduction_step" time="0.036" /><testcase classname="tests.test_paired" name="test_gate_failure_is_terminal_and_preserves_logits" time="0.015" /><testcase classname="tests.test_paired" name="test_both_directions_share_initial_state_and_keep_early_eos" time="0.028" /><testcase classname="tests.test_paired" name="test_masked_kl_matches_analytic_distribution" time="0.003" /><testcase classname="tests.test_paired" name="test_paired_runner_with_native_qwen_attention" time="0.267" /><testcase classname="tests.test_paired" name="test_plan_and_cli_round_trip" time="0.044" /><testcase classname="tests.test_paired" name="test_sink_plan_and_cli_round_trip" time="0.027" /><testcase classname="tests.test_paired_collector" name="test_collector_waits_for_terminal_summary_and_refuses_mutated_terminal_file" time="0.019" /><testcase classname="tests.test_paired_watcher" name="test_capacity_fallback_guards[16-0-2000-01-01T00:00:00+00:00-True-True]" time="0.009" /><testcase classname="tests.test_paired_watcher" name="test_capacity_fallback_guards[16-0-2100-01-01T00:00:00+00:00-True-False]" time="0.007" /><testcase classname="tests.test_paired_watcher" name="test_capacity_fallback_guards[15-1-2000-01-01T00:00:00+00:00-True-False]" time="0.006" /><testcase classname="tests.test_paired_watcher" name="test_capacity_fallback_guards[16-0-2000-01-01T00:00:00+00:00-False-False]" time="0.010" /><testcase classname="tests.test_paired_watcher" name="test_completed_index_refreshes_listing_before_analysis" time="0.015" /><testcase classname="tests.test_runner" name="test_bootstrap_is_processed_but_generated_eos_stops" time="0.064" /><testcase classname="tests.test_runner" name="test_hard_limit_and_raw_logging" time="0.108" /><testcase classname="tests.test_runner" name="test_numerical_failure_has_explicit_artifact" time="0.012" /><testcase classname="tests.test_runner" name="test_plan_has_36_unique_conditions_without_duplicate_empty_seeds" time="0.001" /></testsuite></testsuites>

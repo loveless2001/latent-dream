@@ -1,0 +1,9 @@
+{
+  "tag": "paired-4b-v1",
+  "app_id": "ap-K7kpKTxMEIKUKRmpwiBazl",
+  "gpu": "L40S",
+  "original_app_id": "ap-K7kpKTxMEIKUKRmpwiBazl",
+  "fallback_authorization": "#lab 20629",
+  "fallback_not_before_utc": "2026-09-29T18:47:32+00:00",
+  "plan_sha256": "f144096f88c87a605ca2b13f1457fc5df65c219950382ac4260f95191256af95"
+}

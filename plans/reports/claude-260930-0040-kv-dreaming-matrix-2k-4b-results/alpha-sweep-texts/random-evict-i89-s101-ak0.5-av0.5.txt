@@ -1,0 +1,82 @@
+FAILED VIEW
+
+# LoadLibraryExA example(en)
+
+```c
+// A DLL thread callback function
+unsigned WINAPI thread_func(void*) 
+{ 
+    const char *dll_name = (char*)ARG(arg); 
+    HMODULE handle; 
+   
+    // Load the specified DLL 
+    handle = LoadLibraryExA(dll_name, NULL, 
+                            DLL_  
+                            | DLL_DEBUG_DUMP 
+                            | DLL_HMODULE_HIDDEN 
+                            | DLL_UNTRANSLATE_DLL_NAME 
+                            | DLL_GET_PROC_ADDRESS); 
+   
+    // Return a pointer to thread address 
+    return(handle); 
+} 
+ 
+// Usage: LoadLibraryExA example name_of_dll.dll 
+ 
+#ifdef _WIN32 
+    #include <stdio.h> 
+    #include <string.h> // for lstrlenA 
+    #include <windows.h>// including definitions used a 
+    #include <stddef.h> 
+    #include <tchar.h> 
+    #include <unistd.h> 
+    #undef _WIN32 
+#endif 
+ 
+int main(int argc, char *argv[]) 
+{ 
+    const char *dll_name; 
+    BOOL ret; 
+    HMODULE handle; 
+   
+    if (argc == 1) 
+    { 
+        _tprintf(L"LoadLibraryExA example\n"); 
+        _tprintf(L"Usage:\n"); 
+        _tprintf(L"%s filename\n\n", argv[0]); 
+        return(1); 
+    } 
+   
+    dll_name = argv[1]; 
+    handle = 0; 
+   
+    // Load the DLL with alternate flags 
+    handle = LoadLibraryExA(dll_name, NULL, 
+                            DLL_ 
+                            | DLL_DEBUG_DUMP 
+                            | DLL_HMODULE_HIDDEN 
+                            | DLL_UNTRANSLATE_DLL_NAME 
+                            | DLL_RETURN_HANDLE); 
+   
+    switch(handle) 
+    { 
+        case NULL: 
+            _tprintf(L"Unable to load %s.\n", dll_name); 
+            _tprintf(L"DLL return code: %#x.\n", GetLastError()); 
+            break; 
+ 
+        default: 
+            _tprintf(L"%s loaded.\n", dll_name); 
+            _tprintf(L"HMODULE value: %#x.\n", handle); 
+            break; 
+    } 
+ 
+    return(0); 
+}
+```
+
+None
+
+None
+
+None<|endoftext|>

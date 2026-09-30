@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+runs/
+artifacts/*.pt
+artifacts/*.safetensors
+.env
+.env.*
+!.env.example
+.DS_Store

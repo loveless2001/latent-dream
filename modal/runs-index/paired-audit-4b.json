@@ -1,0 +1,52 @@
+{
+  "plan": "artifacts/paired-plan-reviewed.json",
+  "calibration": "/runs/calib/qwen3-4b-base-cuda-v2.pt",
+  "only": 12,
+  "runs": [
+    {
+      "argv": [
+        "paired",
+        "--calibration",
+        "/runs/calib/qwen3-4b-base-cuda-v2.pt",
+        "--output",
+        "/runs/paired-audit-4b/fragment-i11-s101-b0.25",
+        "--device",
+        "cuda",
+        "--local-files-only",
+        "--initial-state",
+        "fragment",
+        "--prefix-length",
+        "64",
+        "--budget",
+        "128",
+        "--recent",
+        "64",
+        "--initialization-seed",
+        "11",
+        "--sampling-seed",
+        "101",
+        "--max-tokens",
+        "2048",
+        "--max-seconds",
+        "900.0",
+        "--snapshot-every",
+        "0",
+        "--alpha-k",
+        "1.0",
+        "--alpha-v",
+        "1.0",
+        "--fragment-beta",
+        "0.25",
+        "--leader-policy",
+        "both",
+        "--preset",
+        "qwen3-4b-base",
+        "--fragment-sources",
+        "data/fragments/sources.json"
+      ],
+      "returncode": 0,
+      "stdout": "ositions\": [0, 1, 2, 3]}, \"1\": {\"first_affected_step\": null, \"all_unprotected_affected_step\": null, \"all_original_affected_step\": null, \"protected_positions\": []}, \"2\": {\"first_affected_step\": null, \"all_unprotected_affected_step\": null, \"all_original_affected_step\": null, \"protected_positions\": []}, \"3\": {\"first_affected_step\": null, \"all_unprotected_affected_step\": null, \"all_original_affected_step\": null, \"protected_positions\": []}}, \"follower\": {\"0\": {\"first_affected_step\": null, \"all_unprotected_affected_step\": null, \"all_original_affected_step\": null, \"protected_positions\": [0, 1, 2, 3]}, \"1\": {\"first_affected_step\": null, \"all_unprotected_affected_step\": null, \"all_original_affected_step\": null, \"protected_positions\": []}, \"2\": {\"first_affected_step\": null, \"all_unprotected_affected_step\": null, \"all_original_affected_step\": null, \"protected_positions\": []}, \"3\": {\"first_affected_step\": null, \"all_unprotected_affected_step\": null, \"all_original_affected_step\": null, \"protected_positions\": []}}}, \"fragment_recall\": [{\"fragment_id\": 0, \"source_id\": \"sampling\", \"protected_positions\": [0, 1, 2, 3], \"boundaries\": {\"first_affected_step\": {\"boundary_step\": null, \"eligible_trigrams\": 14, \"post_boundary_tokens\": 0, \"recall\": null, \"last_recurrence_step\": null, \"recurrences\": [], \"unavailable_reason\": \"boundary_not_reached\"}, \"all_unprotected_affected_step\": {\"boundary_step\": null, \"eligible_trigrams\": 14, \"post_boundary_tokens\": 0, \"recall\": null, \"last_recurrence_step\": null, \"recurrences\": [], \"unavailable_reason\": \"boundary_not_reached\"}, \"all_original_affected_step\": {\"boundary_step\": null, \"eligible_trigrams\": 14, \"post_boundary_tokens\": 0, \"recall\": null, \"last_recurrence_step\": null, \"recurrences\": [], \"unavailable_reason\": \"boundary_not_reached\"}}}, {\"fragment_id\": 1, \"source_id\": \"alice\", \"protected_positions\": [], \"boundaries\": {\"first_affected_step\": {\"boundary_step\": null, \"eligible_trigrams\": 14, \"post_boundary_tokens\": 0, \"recall\": null, \"last_recurrence_step\": null, \"recurrences\": [], \"unavailable_reason\": \"boundary_not_reached\"}, \"all_unprotected_affected_step\": {\"boundary_step\": null, \"eligible_trigrams\": 14, \"post_boundary_tokens\": 0, \"recall\": null, \"last_recurrence_step\": null, \"recurrences\": [], \"unavailable_reason\": \"boundary_not_reached\"}, \"all_original_affected_step\": {\"boundary_step\": null, \"eligible_trigrams\": 14, \"post_boundary_tokens\": 0, \"recall\": null, \"last_recurrence_step\": null, \"recurrences\": [], \"unavailable_reason\": \"boundary_not_reached\"}}}, {\"fragment_id\": 2, \"source_id\": \"darwin\", \"protected_positions\": [], \"boundaries\": {\"first_affected_step\": {\"boundary_step\": null, \"eligible_trigrams\": 14, \"post_boundary_tokens\": 0, \"recall\": null, \"last_recurrence_step\": null, \"recurrences\": [], \"unavailable_reason\": \"boundary_not_reached\"}, \"all_unprotected_affected_step\": {\"boundary_step\": null, \"eligible_trigrams\": 14, \"post_boundary_tokens\": 0, \"recall\": null, \"last_recurrence_step\": null, \"recurrences\": [], \"unavailable_reason\": \"boundary_not_reached\"}, \"all_original_affected_step\": {\"boundary_step\": null, \"eligible_trigrams\": 14, \"post_boundary_tokens\": 0, \"recall\": null, \"last_recurrence_step\": null, \"recurrences\": [], \"unavailable_reason\": \"boundary_not_reached\"}}}, {\"fragment_id\": 3, \"source_id\": \"declaration\", \"protected_positions\": [], \"boundaries\": {\"first_affected_step\": {\"boundary_step\": null, \"eligible_trigrams\": 14, \"post_boundary_tokens\": 0, \"recall\": null, \"last_recurrence_step\": null, \"recurrences\": [], \"unavailable_reason\": \"boundary_not_reached\"}, \"all_unprotected_affected_step\": {\"boundary_step\": null, \"eligible_trigrams\": 14, \"post_boundary_tokens\": 0, \"recall\": null, \"last_recurrence_step\": null, \"recurrences\": [], \"unavailable_reason\": \"boundary_not_reached\"}, \"all_original_affected_step\": {\"boundary_step\": null, \"eligible_trigrams\": 14, \"post_boundary_tokens\": 0, \"recall\": null, \"last_recurrence_step\": null, \"recurrences\": [], \"unavailable_reason\": \"boundary_not_reached\"}}}]}}\n",
+      "stderr": "\nLoading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]\nLoading checkpoint shards:  33%|\u2588\u2588\u2588\u258e      | 1/3 [00:02<00:04,  2.30s/it]\nLoading checkpoint shards:  67%|\u2588\u2588\u2588\u2588\u2588\u2588\u258b   | 2/3 [00:04<00:02,  2.43s/it]\nLoading checkpoint shards: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 3/3 [00:04<00:00,  1.63s/it]\n"
+    }
+  ]
+}
