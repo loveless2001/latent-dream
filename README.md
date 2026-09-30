@@ -1,5 +1,7 @@
 # Latent Dream
 
+[Live report](https://loveless2001.github.io/latent-dream/) · [GitHub repository](https://github.com/loveless2001/latent-dream)
+
 A frozen Qwen3 model starts from synthetic KV state, receives one bootstrap token, then feeds its own sampled tokens back into inference. No chat template, task prompt, training, or output cleanup is applied. This is a generation experiment; textual behavior does not settle subjective experience.
 
 Working folder: `/home/lenovo/projects/latent-dream/`. The former `kv-dreaming/` path remains a local compatibility symlink so recorded evidence paths and the existing environment continue to resolve. The Python package and CLI retain their `kv_dreaming` and `kv-dream` names.
